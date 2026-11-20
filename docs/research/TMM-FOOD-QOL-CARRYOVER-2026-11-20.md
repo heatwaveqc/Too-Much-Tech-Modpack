@@ -1,3 +1,5 @@
+> **Owner target update, 2026-11-20:** All 56 candidate carryover entries are now intended inclusions, but no old TMM mods were blindly copied. The donor's Get It Together, Drops! artifact filename points to 1.21.5 and remains on conditional hold pending a real 1.21.1 file. Consult [the live mod register](../../manifest/mods.json) for current target flags.
+
 # TMM → TMT food, quality-of-life and performance carryover survey
 
 **Date:** 2026-11-20. **Authoritative donor snapshot:** [TMM `test/full-integration` mod register](https://github.com/heatwaveqc/Too-Much-Magic-Modpack/blob/test/full-integration/manifest/mods.json), [packwiz index](https://github.com/heatwaveqc/Too-Much-Magic-Modpack/blob/test/full-integration/index.toml), inspected around revision `7d1be155bf1334995b65ebe88566bd4d7ae54635`.

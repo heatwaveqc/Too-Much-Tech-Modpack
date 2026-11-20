@@ -62,6 +62,33 @@ class BootstrapValidationTests(unittest.TestCase):
         }])
         self.assertTrue(any("needs packwiz_file" in e for e in validate(self.root)))
 
+    def test_target_marker_does_not_count_as_pinned(self):
+        self.write_mods([{
+            "id": "factas", "name": "FACTAS", "status": "approved",
+            "project_url": "https://example.com/factas",
+            "targeted_inclusion": True, "selection_state": "targeted",
+            "packwiz_installed": False,
+        }])
+        self.assertEqual(validate(self.root), [])
+
+    def test_conditional_target_remains_held(self):
+        self.write_mods([{
+            "id": "thermal", "name": "Thermal", "status": "approved",
+            "project_url": "https://example.com/thermal",
+            "targeted_inclusion": True, "selection_state": "conditional_target",
+            "packwiz_installed": False,
+        }])
+        self.assertTrue(any("conditional target" in e for e in validate(self.root)))
+
+    def test_new_mob_survey_not_approved(self):
+        self.write_mods([{
+            "id": "cybernetics", "name": "Cybernetics", "status": "researching",
+            "project_url": "https://example.com/cybernetics",
+            "targeted_inclusion": False, "selection_state": "unselected_mob_survey",
+            "packwiz_installed": False,
+        }])
+        self.assertEqual(validate(self.root), [])
+
     def test_rejects_unsafe_index_path(self):
         text = (self.root / "pack.toml").read_text(encoding="utf-8")
         (self.root / "pack.toml").write_text(

@@ -11,11 +11,11 @@ The repository's purpose is to turn that broad intent into an evidence-backed, r
 ## Locked design direction (2026-11-20)
 
 - **Owner-selected technology backbone:** Oritech, Just Dire Things, Mekanism and Draconic Evolution. These are selected in principle, not actually pinned, installed, built or gameplay-tested.
-- **Desired if feasible:** the official Thermal Expansion family, currently **held** because no official 1.21.1 NeoForge release was found. A separate Thermal-inspired beta such as FACTAS is not automatically approved as a substitute.
+- **Desired if feasible:** the official Thermal Expansion family, currently **held** because no official 1.21.1 NeoForge release was found. The independent FACTAS beta is explicitly targeted, without representing it as an official Thermal port.
 - **Progression tone:** **fun with technology, not GregTech-style enforced grind.** Prefer machines, spatial engineering, power networks, and clever automation puzzles over repeated mandatory crafting loops, laborious subcomponents, dozens of arbitrary gating stages or one required mod chained through another for its own sake.
 - **Sister-pack convenience:** port most appropriate TMM food and quality-of-life mods, but independently verify artifact versions/compatibility and **do not** port magic-only progression or invalid historical pins.
 
-See [current research](research/TECH-MODS-2026-11-20.md), [TMM carryover](research/TMM-FOOD-QOL-CARRYOVER-2026-11-20.md), and [owner decisions](DECISIONS.md). Other surveyed mod names are only **candidates**.
+See [current research](research/TECH-MODS-2026-11-20.md), [TMM carryover](research/TMM-FOOD-QOL-CARRYOVER-2026-11-20.md), and [owner decisions](DECISIONS.md). All 102 pre-existing tech and TMM food/QoL survey items are targeted for future inclusion subject to compatibility checks. The separately researched robot-mob mods are **not** approved for installation.
 
 ## Design areas awaiting owner choices
 
@@ -28,7 +28,7 @@ See [current research](research/TECH-MODS-2026-11-20.md), [TMM carryover](resear
 7. **Modpack identity:** how much magic, food, cosmetic, quest, skill, and custom-code content belongs in a technology-centered pack; whether the projects share data libraries or remain fully independent.
 8. **Practical limits:** target client/server hardware, player count, intended pack size, acceptable load time, and release/testing cadence.
 
-**No additional named third-party mod is approved merely by appearing in an issue, a comparison, or the sibling repository.** The four explicitly owner-selected core mods are exceptions. Record subsequent selections with version evidence in `manifest/mods.json` and [DECISIONS.md](DECISIONS.md).
+**No additional named third-party mod is approved merely by appearing in an issue, a comparison, or the sibling repository.** The owner has explicitly targeted the entire earlier 102-entry tech/food/QoL survey; this does not extend to newly researched mods. Record subsequent selections with version evidence in `manifest/mods.json` and [DECISIONS.md](DECISIONS.md).
 
 ## Provisional technology choices (not gameplay commitments)
 

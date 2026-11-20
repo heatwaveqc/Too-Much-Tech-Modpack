@@ -121,6 +121,24 @@ def validate(root: Path) -> list[str]:
         url = mod.get("project_url")
         if not isinstance(url, str) or not url.startswith("https://"):
             errors.append(f"{prefix} needs canonical https project_url")
+        # Target-selection is policy intent, not a provider/version pin.
+        selected = mod.get("targeted_inclusion")
+        if selected is not None and not isinstance(selected, bool):
+            errors.append(f"{prefix} targeted_inclusion must be boolean")
+        selection = mod.get("selection_state")
+        accepted_states = {"targeted", "targeted_alternative", "conditional_target", "unselected_mob_survey"}
+        if selection is not None and selection not in accepted_states:
+            errors.append(f"{prefix} invalid selection_state")
+        if selected is True and selection not in {"targeted", "targeted_alternative", "conditional_target"}:
+            errors.append(f"{prefix} targeted entry needs compatible selection_state")
+        if selected is False and selection in {"targeted", "targeted_alternative", "conditional_target"}:
+            errors.append(f"{prefix} unselected entry cannot claim owner target")
+        if selection == "conditional_target" and mod.get("status") != "held":
+            errors.append(f"{prefix} conditional target must remain held")
+        if selected is True and mod.get("packwiz_installed") is False and mod.get("status") == "pinned":
+            errors.append(f"{prefix} status pinned conflicts with packwiz_installed false")
+        if mod.get("packwiz_installed") is True and mod.get("status") != "pinned":
+            errors.append(f"{prefix} installed index claim requires pinned status")
         if mod.get("status") == "pinned":
             if not isinstance(mod.get("version"), str) or not mod["version"].strip():
                 errors.append(f"{prefix} pinned mod needs exact version")
