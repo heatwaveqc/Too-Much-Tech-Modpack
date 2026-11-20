@@ -35,3 +35,7 @@ The new `manifest/progression-goals.json` locks a first-party **reuse target** f
 ## Dimension inclusion goals — 2026-11-20
 
 The owner explicitly promoted seven dimensional entries from `unselected_dimension_survey` to `targeted`: **five primary** (`ad-astra-planets`, `stargate-journey`, `rftools-dimensions`, `infinite-dimensions`, `deep-space-unofficial-port`) and **two isolated-experiment** (`machina-mod`, `create-universe`). The `goal_phase` marks implementation priority and QA isolation, **not** an installed/approved runtime artifact or proof that the claimed feature exists. Thirteen remaining new dimension candidates remain research-only. Existing `ad-astra` target is unchanged. All seven have `packwiz_installed:false` until separately reviewed exact pins.
+
+## Biotechnology survey — 2026-11-20
+
+The initial biotechnology exploration added **24 research-only candidate records**, all marked `targeted_inclusion: false` and `selection_state: unselected_biotech_survey`. They are **not** additions to the owner-targeted roster. Most have published Minecraft 1.21.1 NeoForge release metadata, but a provider-listed version is not a verified download, hash, loader dependency or combined runtime pass. The two independent Biomancy 1.21.1 port implementations are identified as a potential hard mod-ID/content conflict; select at most one implementation when planning a build. [Biotech report](../docs/research/BIOTECH-2026-11-20.md).

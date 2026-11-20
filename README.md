@@ -21,6 +21,7 @@ These choices reuse known tooling from the sister project for an efficient start
 - [docs/DECISIONS.md](docs/DECISIONS.md): decision ledger, including provisional assumptions.
 - [Cybernetic progression goals](manifest/progression-goals.json): Cyborg / Meatbag / Alien path goals and shared TMM Progression source gate.
 - [Thematic dimensions research](docs/research/THEMATIC-DIMENSIONS-2026-11-20.md): Ad Astra custom planet configuration and 20 other dimension/procedural candidates.
+- [Biotechnology ecosystem survey](docs/research/BIOTECH-2026-11-20.md): 24 research-only genetics, living factory, pathology and alien biology candidates.
 - [docs/WORKFLOW.md](docs/WORKFLOW.md): branches, PRs, ownership, and integration.
 - [docs/BRANCH-LIFECYCLE.md](docs/BRANCH-LIFECYCLE.md): review and retirement, single-writer workstreams, branch budget.
 - [docs/INTEGRATION-SOURCES.md](docs/INTEGRATION-SOURCES.md): immutable donor commits and path ownership.

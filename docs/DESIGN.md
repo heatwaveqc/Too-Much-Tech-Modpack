@@ -19,6 +19,8 @@ The repository's purpose is to turn that broad intent into an evidence-backed, r
 - **Dimensions:** Ad Astra was already selected. **Primary additional goals** are Ad Astra: Planets, Stargate Journey, RFTools Dimensions, Infinite Dimensions, and Deep Space; **isolated experimental goals** are MACHINA and Create: Universe. Planet definitions with seeded terrain and runtime-generated dimensions are distinct implementations. [Dimension survey](research/THEMATIC-DIMENSIONS-2026-11-20.md).
 - **Sister-pack convenience:** port most appropriate TMM food and quality-of-life mods, but independently verify artifact versions/compatibility and **do not** port magic-only progression or invalid historical pins.
 
+**Biotechnology research (not yet selected):** genetics and animal breeding, biological factories, engineered life, biotech medicine, and alien physiology. See [biotech survey](research/BIOTECH-2026-11-20.md). The existing Cyborg/Meatbag/Alien shared Progression path goals could incorporate biotech *later* without declaring a fourth class or introducing an unapproved restriction.
+
 See [current research](research/TECH-MODS-2026-11-20.md), [TMM carryover](research/TMM-FOOD-QOL-CARRYOVER-2026-11-20.md), and [owner decisions](DECISIONS.md). All 102 pre-existing tech and TMM food/QoL survey items are targeted for future inclusion subject to compatibility checks. Cybernetics from the robot-mob survey is now owner-targeted, while the other 11 mob candidates and all 20 new dimension survey candidates remain research-only.
 
 ## Design areas awaiting owner choices
