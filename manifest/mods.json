@@ -8,7 +8,7 @@
     "java": 21,
     "loader_status": "provisional"
   },
-  "status_note": "Approved = owner selected, NOT a pinned/downloaded/assembled mod. Researching = candidate only. Held = version/artifact concern. No file indexed by this survey.",
+  "status_note": "Owner 2026-11-20 selected all 102 prior tech and TMM food/QoL candidates as targeted inclusions, subject to version/dependency/conflict gates; not packwiz-pinned or installed. Three unavailable official Thermal modules and one mis-versioned donor artifact are conditional targets. The 12 new robot/cyborg mob results are RESEARCH-ONLY, not approved.",
   "donor": {
     "repository": "heatwaveqc/Too-Much-Magic-Modpack",
     "branch": "test/full-integration",
@@ -19,51 +19,67 @@
     {
       "id": "ftb-chunks",
       "name": "FTB Chunks",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://www.curseforge.com/minecraft/mc-mods/ftb-chunks-forge",
       "category": "shared-infrastructure",
       "tmm_observed_version": "ftb-chunks-neoforge-2101.1.24",
       "source_origin": "TMM live integration register",
       "notes": "Useful chunk claiming and tech-machine chunkloading; confirm server rules.",
-      "packwiz_installed": false
+      "packwiz_installed": false,
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "ftb-library",
       "name": "FTB Library",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://www.curseforge.com/minecraft/mc-mods/ftb-library-forge",
       "category": "shared-infrastructure",
       "tmm_observed_version": "ftb-library-neoforge-2101.1.39",
       "source_origin": "TMM live integration register",
       "notes": "Transitive FTB module; only install if required by chosen FTB features.",
-      "packwiz_installed": false
+      "packwiz_installed": false,
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "ftb-quests",
       "name": "FTB Quests",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://www.curseforge.com/minecraft/mc-mods/ftb-quests-forge",
       "category": "shared-infrastructure",
       "tmm_observed_version": "ftb-quests-neoforge-2101.1.38",
       "source_origin": "TMM live integration register",
       "notes": "Quest framework; essential later, no magic quest files copied.",
-      "packwiz_installed": false
+      "packwiz_installed": false,
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "kubejs",
       "name": "KubeJS",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://modrinth.com/mod/umyGl7zF",
       "category": "shared-infrastructure",
       "tmm_observed_version": "kubejs-neoforge-2101.7.2-build.381",
       "source_origin": "TMM live integration register",
       "notes": "Controlled interoperability and tech recipe scripting; reuse only generic tooling.",
-      "packwiz_installed": false
+      "packwiz_installed": false,
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "ad-astra",
       "name": "Ad Astra",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://www.curseforge.com/minecraft/mc-mods/ad-astra",
       "category": "tech",
       "survey_version": "1.16.26",
@@ -73,12 +89,16 @@
       "source_origin": "upstream-release-survey",
       "notes": "Space exploration as a late-game tech objective; review planets, dimensions and oxygen chain.",
       "packwiz_installed": false,
-      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested"
+      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested",
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "applied-energistics-2",
       "name": "Applied Energistics 2",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://www.curseforge.com/minecraft/mc-mods/applied-energistics-2",
       "category": "tech",
       "survey_version": "19.2.20",
@@ -88,12 +108,18 @@
       "source_origin": "upstream-release-survey",
       "notes": "Complex storage/autocrafting/logistics; decide against or alongside Refined Storage.",
       "packwiz_installed": false,
-      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested"
+      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested",
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted",
+      "selection_conflict_group": "digital-storage",
+      "selection_gate": "both targeted; shared resources and autocrafting performance must be reviewed"
     },
     {
       "id": "cc-tweaked",
       "name": "CC: Tweaked",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://modrinth.com/mod/cc-tweaked/version/KNdTEfUA",
       "category": "tech",
       "survey_version": "1.121.0",
@@ -103,12 +129,16 @@
       "source_origin": "upstream-release-survey",
       "notes": "TMM compatible version reference; programmable turtles are optional fun rather than mandatory progression.",
       "packwiz_installed": false,
-      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested"
+      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested",
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "create",
       "name": "Create",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://www.curseforge.com/minecraft/mc-mods/create",
       "category": "tech",
       "survey_version": "6.0.10",
@@ -118,12 +148,16 @@
       "source_origin": "upstream-release-survey",
       "notes": "Kinetic contraptions and engineering creativity; avoid making Create compulsory for every machine.",
       "packwiz_installed": false,
-      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested"
+      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested",
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "createaddition",
       "name": "Create Crafts & Additions",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://www.curseforge.com/minecraft/mc-mods/createaddition",
       "category": "tech",
       "survey_version": "1.7.2",
@@ -133,7 +167,11 @@
       "source_origin": "upstream-release-survey",
       "notes": "Bridge FE to kinetic power (motor/alternator); verify conversion loop exploits.",
       "packwiz_installed": false,
-      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested"
+      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested",
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "draconic-evolution",
@@ -143,17 +181,21 @@
       "category": "tech",
       "survey_version": "3.1.4.633",
       "release_channel": "beta",
-      "priority": "core",
+      "priority": "explicit_owner_target",
       "review_date": "2026-11-20",
       "source_origin": "upstream-release-survey",
-      "notes": "Owner-selected; beta 1.21.1. TMM donor metadata also references this exact build; verify Brandons Core, CodeChickenLib and server/client behavior.",
+      "notes": "Owner-selected; beta 1.21.1. TMM donor metadata also references this exact build; verify Brandons Core, CodeChickenLib and server/client behavior. Owner re-confirmed targeted inclusion 2026-11-20; beta still requires dependency and runtime testing.",
       "packwiz_installed": false,
-      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested"
+      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested",
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "ender-io",
       "name": "Ender IO",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://www.curseforge.com/minecraft/mc-mods/ender-io",
       "category": "tech",
       "survey_version": "8.2.14-beta",
@@ -163,12 +205,18 @@
       "source_origin": "upstream-release-survey",
       "notes": "Conduits and compact factories; beta only; do not mix competing Ender IO forks.",
       "packwiz_installed": false,
-      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested"
+      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested",
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted_alternative",
+      "selection_conflict_group": "enderio-implementation",
+      "selection_gate": "targeted alternative; resolve one Ender IO lineage before installation"
     },
     {
       "id": "enderio-evolution",
       "name": "Ender IO: Evolution",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://www.curseforge.com/minecraft/mc-mods/enderio-evolution",
       "category": "tech",
       "survey_version": "3.1.6",
@@ -178,12 +226,18 @@
       "source_origin": "upstream-release-survey",
       "notes": "Distinct maintained alternative; study content parity and provenance, choose ONE Ender IO family.",
       "packwiz_installed": false,
-      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested"
+      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested",
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted_alternative",
+      "selection_conflict_group": "enderio-implementation",
+      "selection_gate": "targeted alternative; resolve one Ender IO lineage before installation"
     },
     {
       "id": "extreme-reactors",
       "name": "Extreme Reactors",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://www.curseforge.com/minecraft/mc-mods/extreme-reactors",
       "category": "tech",
       "survey_version": "2.4.28",
@@ -193,27 +247,35 @@
       "source_origin": "upstream-release-survey",
       "notes": "Optional reactor branch; avoid duplicating identical reactor tiers without unique benefits.",
       "packwiz_installed": false,
-      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested"
+      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested",
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "factas",
       "name": "FACTAS",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://www.curseforge.com/minecraft/mc-mods/factas",
       "category": "tech",
       "survey_version": "0.2.1",
       "release_channel": "beta",
-      "priority": "alternative",
+      "priority": "explicit_owner_target",
       "review_date": "2026-11-20",
       "source_origin": "upstream-release-survey",
-      "notes": "Independent Thermal-inspired project, NOT official Thermal port. Beta, assess feature coverage/rights.",
+      "notes": "Independent Thermal-inspired project, NOT official Thermal port. Beta, assess feature coverage/rights. Explicit owner target 2026-11-20, not Thermal series; beta risk acknowledged for research and validation, no automatic install.",
       "packwiz_installed": false,
-      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested"
+      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested",
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "flux-networks",
       "name": "Flux Networks",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://www.curseforge.com/minecraft/mc-mods/flux-networks",
       "category": "tech",
       "survey_version": "8.0.0",
@@ -223,12 +285,16 @@
       "source_origin": "upstream-release-survey",
       "notes": "Wireless FE network; check if it makes energy logistics trivial too early.",
       "packwiz_installed": false,
-      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested"
+      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested",
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "functional-storage",
       "name": "Functional Storage",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://www.curseforge.com/minecraft/mc-mods/functional-storage",
       "category": "tech",
       "survey_version": "1.5.8",
@@ -238,12 +304,16 @@
       "source_origin": "upstream-release-survey",
       "notes": "Drawer/bulk storage complements any central network.",
       "packwiz_installed": false,
-      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested"
+      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested",
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "immersive-engineering",
       "name": "Immersive Engineering",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://www.curseforge.com/minecraft/mc-mods/immersive-engineering",
       "category": "tech",
       "survey_version": "12.4.2-194",
@@ -253,12 +323,16 @@
       "source_origin": "upstream-release-survey",
       "notes": "Distinct multiblocks, immersive cabling, heavy industry; likely complementary to Oritech.",
       "packwiz_installed": false,
-      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested"
+      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested",
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "industrial-foregoing",
       "name": "Industrial Foregoing",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://www.curseforge.com/minecraft/mc-mods/industrial-foregoing",
       "category": "tech",
       "survey_version": "3.6.39",
@@ -268,12 +342,16 @@
       "source_origin": "upstream-release-survey",
       "notes": "Fun resource/animal/tree/farm automation; beta risk; verify Titanium/lib dependencies.",
       "packwiz_installed": false,
-      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested"
+      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested",
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "integrated-dynamics",
       "name": "Integrated Dynamics",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://www.curseforge.com/minecraft/mc-mods/integrated-dynamics/files/9626576",
       "category": "tech",
       "survey_version": "1.39.1",
@@ -283,12 +361,16 @@
       "source_origin": "upstream-release-survey",
       "notes": "Logic-driven automation with variable cards; sophisticated but optional, don't require programming.",
       "packwiz_installed": false,
-      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested"
+      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested",
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "integrated-tunnels",
       "name": "Integrated Tunnels",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://www.curseforge.com/minecraft/mc-mods/integrated-tunnels",
       "category": "tech",
       "survey_version": "1.13.1",
@@ -298,7 +380,11 @@
       "source_origin": "upstream-release-survey",
       "notes": "Companion for Integrated Dynamics; verify dependency version and exact release.",
       "packwiz_installed": false,
-      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested"
+      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested",
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "just-dire-things",
@@ -313,12 +399,16 @@
       "source_origin": "upstream-release-survey",
       "notes": "Owner-selected; unusual upgrades, time manipulation and automation; verify acceleration interactions.",
       "packwiz_installed": false,
-      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested"
+      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested",
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "jdte",
       "name": "Just Dire Things Extra",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://www.curseforge.com/minecraft/mc-mods/jdte",
       "category": "tech",
       "survey_version": "0.6.5.0",
@@ -328,12 +418,16 @@
       "source_origin": "upstream-release-survey",
       "notes": "JDT addon with time accelerators/automation; potential performance risk.",
       "packwiz_installed": false,
-      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested"
+      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested",
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "just-dyna-things",
       "name": "Just Dyna Things",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://www.curseforge.com/minecraft/mc-mods/just-dyna-things",
       "category": "tech",
       "survey_version": "1.20.7.1",
@@ -343,12 +437,16 @@
       "source_origin": "upstream-release-survey",
       "notes": "JDT addon; evaluate if unique capabilities versus overlap.",
       "packwiz_installed": false,
-      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested"
+      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested",
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "laserio",
       "name": "LaserIO",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://www.curseforge.com/minecraft/mc-mods/laserio",
       "category": "tech",
       "survey_version": "1.9.11",
@@ -358,7 +456,11 @@
       "source_origin": "upstream-release-survey",
       "notes": "Directional item/fluid/energy logistics; overlaps conduits and Pipez; choose base defaults.",
       "packwiz_installed": false,
-      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested"
+      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested",
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "mekanism",
@@ -373,12 +475,16 @@
       "source_origin": "upstream-release-survey",
       "notes": "Owner-selected; rich machinery and logistics; design optional processing tiers, not a forced slog.",
       "packwiz_installed": false,
-      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested"
+      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested",
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "mekanism-additions",
       "name": "Mekanism Additions",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://www.curseforge.com/minecraft/mc-mods/mekanism-additions",
       "category": "tech",
       "survey_version": "10.7.19.85",
@@ -388,12 +494,16 @@
       "source_origin": "upstream-release-survey",
       "notes": "Needs independent target file verification; main page search showed stale older releases.",
       "packwiz_installed": false,
-      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested"
+      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested",
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "mekanism-generators",
       "name": "Mekanism Generators",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://www.curseforge.com/minecraft/mc-mods/mekanism-generators",
       "category": "tech",
       "survey_version": "10.7.19.85",
@@ -403,12 +513,16 @@
       "source_origin": "upstream-release-survey",
       "notes": "Matching separately distributed module, critical to full power progression; verify dependency lock.",
       "packwiz_installed": false,
-      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested"
+      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested",
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "mekanism-tools",
       "name": "Mekanism Tools",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://www.curseforge.com/minecraft/mc-mods/mekanism-tools",
       "category": "tech",
       "survey_version": "10.7.19.85",
@@ -418,12 +532,16 @@
       "source_origin": "upstream-release-survey",
       "notes": "Matching separate module; gear choice should not trivialize early tools.",
       "packwiz_installed": false,
-      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested"
+      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested",
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "mob-grinding-utils",
       "name": "Mob Grinding Utils",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://www.curseforge.com/minecraft/mc-mods/mob-grinding-utils",
       "category": "tech",
       "survey_version": "1.1.10",
@@ -433,12 +551,16 @@
       "source_origin": "upstream-release-survey",
       "notes": "Automation of mob drops/XP, balance with other mob factories.",
       "packwiz_installed": false,
-      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested"
+      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested",
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "modular-routers",
       "name": "Modular Routers",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://www.curseforge.com/minecraft/mc-mods/modular-routers",
       "category": "tech",
       "survey_version": "13.2.7",
@@ -448,12 +570,16 @@
       "source_origin": "upstream-release-survey",
       "notes": "Flexible compact routing and useful device automation.",
       "packwiz_installed": false,
-      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested"
+      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested",
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "mystical-agriculture",
       "name": "Mystical Agriculture",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://www.curseforge.com/minecraft/mc-mods/mystical-agriculture",
       "category": "tech",
       "survey_version": "8.0.29",
@@ -463,7 +589,11 @@
       "source_origin": "upstream-release-survey",
       "notes": "Alternative renewable resource loop; risk trivializing mining and industrial processing.",
       "packwiz_installed": false,
-      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested"
+      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested",
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "oritech",
@@ -478,12 +608,16 @@
       "source_origin": "upstream-release-survey",
       "notes": "Owner-selected; animated machines, processing, FE. Verify source dependencies and power balancing.",
       "packwiz_installed": false,
-      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested"
+      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested",
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "pipez",
       "name": "Pipez",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://www.curseforge.com/minecraft/mc-mods/pipez",
       "category": "tech",
       "survey_version": "1.2.31",
@@ -493,12 +627,16 @@
       "source_origin": "upstream-release-survey",
       "notes": "Straightforward pipes; beta on 1.21.1 and overlaps LaserIO/conduits.",
       "packwiz_installed": false,
-      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested"
+      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested",
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "pneumaticcraft-repressurized",
       "name": "PneumaticCraft: Repressurized",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://www.curseforge.com/minecraft/mc-mods/pneumaticcraft-repressurized/files/9363728",
       "category": "tech",
       "survey_version": "8.2.24",
@@ -508,12 +646,16 @@
       "source_origin": "upstream-release-survey",
       "notes": "Air pressure, programmable drones and systems puzzle; keep pressure learning optional rather than hard gate.",
       "packwiz_installed": false,
-      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested"
+      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested",
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "powah-rearchitected",
       "name": "Powah!",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://www.curseforge.com/minecraft/mc-mods/powah-rearchitected",
       "category": "tech",
       "survey_version": "6.2.10",
@@ -523,12 +665,16 @@
       "source_origin": "upstream-release-survey",
       "notes": "Tiered energy infrastructure; calibrate against Mekanism and Draconic generation.",
       "packwiz_installed": false,
-      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested"
+      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested",
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "productivebees",
       "name": "Productive Bees",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://www.curseforge.com/minecraft/mc-mods/productivebees",
       "category": "tech",
       "survey_version": "13.14.0",
@@ -538,12 +684,16 @@
       "source_origin": "upstream-release-survey",
       "notes": "Renewable resource engineering integrated with TMM agricultural roster; care for power-creep.",
       "packwiz_installed": false,
-      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested"
+      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested",
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "refined-storage",
       "name": "Refined Storage",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://www.curseforge.com/minecraft/mc-mods/refined-storage",
       "category": "tech",
       "survey_version": "2.0.9",
@@ -553,12 +703,18 @@
       "source_origin": "upstream-release-survey",
       "notes": "Convenience-forward storage/autocrafting alternative; choose network philosophy before duplicating.",
       "packwiz_installed": false,
-      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested"
+      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested",
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted",
+      "selection_conflict_group": "digital-storage",
+      "selection_gate": "both targeted; shared resources and autocrafting performance must be reviewed"
     },
     {
       "id": "rftools-builder",
       "name": "RFTools Builder",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://www.curseforge.com/minecraft/mc-mods/rftools-builder",
       "category": "tech",
       "survey_version": "7.0.8",
@@ -568,12 +724,16 @@
       "source_origin": "upstream-release-survey",
       "notes": "Quarry/construction and shields; beta; verify RFTools Base/McJtyLib.",
       "packwiz_installed": false,
-      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested"
+      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested",
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "rftools-power",
       "name": "RFTools Power",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://www.curseforge.com/minecraft/mc-mods/rftools-power",
       "category": "tech",
       "survey_version": "7.0.6",
@@ -583,12 +743,16 @@
       "source_origin": "upstream-release-survey",
       "notes": "Energy generation/storage niche may duplicate stronger ecosystems.",
       "packwiz_installed": false,
-      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested"
+      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested",
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "rftools-utility",
       "name": "RFTools Utility",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://www.curseforge.com/minecraft/mc-mods/rftools-utility",
       "category": "tech",
       "survey_version": "7.0.13",
@@ -598,12 +762,16 @@
       "source_origin": "upstream-release-survey",
       "notes": "Utilities for advanced base management; beta and dependency chain.",
       "packwiz_installed": false,
-      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested"
+      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested",
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "sophisticated-storage",
       "name": "Sophisticated Storage",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://www.curseforge.com/minecraft/mc-mods/sophisticated-storage",
       "category": "tech",
       "survey_version": "1.6.20.2239",
@@ -613,12 +781,16 @@
       "source_origin": "upstream-release-survey",
       "notes": "1.21.1 artifact visible; verify specific release channel and Sophisticated Core dependency.",
       "packwiz_installed": false,
-      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested"
+      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested",
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "create-steam-n-rails-neoforge",
       "name": "Steam 'n' Rails Neoforge",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://www.curseforge.com/minecraft/mc-mods/steam-n-rails-neoforge",
       "category": "tech",
       "survey_version": "0.2.1",
@@ -628,7 +800,11 @@
       "source_origin": "upstream-release-survey",
       "notes": "Unofficial 1.21.1 Create port; verify trust, rights, dependencies and compatibility.",
       "packwiz_installed": false,
-      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested"
+      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested",
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "thermal-dynamics",
@@ -642,7 +818,12 @@
       "source_origin": "upstream-release-survey",
       "notes": "Official releases stop at 1.20.1; hold.",
       "packwiz_installed": false,
-      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested"
+      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested",
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "conditional_target",
+      "selection_gate": "no verified official NeoForge 1.21.1 release; do not install or substitute"
     },
     {
       "id": "thermal-expansion",
@@ -656,7 +837,12 @@
       "source_origin": "upstream-release-survey",
       "notes": "Official latest shown 1.20.1; DO NOT mislabel as available for 1.21.1.",
       "packwiz_installed": false,
-      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested"
+      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested",
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "conditional_target",
+      "selection_gate": "no verified official NeoForge 1.21.1 release; do not install or substitute"
     },
     {
       "id": "thermal-foundation",
@@ -670,12 +856,17 @@
       "source_origin": "upstream-release-survey",
       "notes": "Official releases stop at 1.20.1; 1.21.1 Thermal series not demonstrated.",
       "packwiz_installed": false,
-      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested"
+      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested",
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "conditional_target",
+      "selection_gate": "no verified official NeoForge 1.21.1 release; do not install or substitute"
     },
     {
       "id": "xnet",
       "name": "XNet",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://www.curseforge.com/minecraft/mc-mods/xnet",
       "category": "tech",
       "survey_version": "7.0.7",
@@ -685,12 +876,220 @@
       "source_origin": "upstream-release-survey",
       "notes": "Powerful channelized logistics, but beta and high overlap.",
       "packwiz_installed": false,
-      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested"
+      "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested",
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
+    },
+    {
+      "id": "automechs",
+      "name": "Automechs",
+      "status": "researching",
+      "selection_state": "unselected_mob_survey",
+      "targeted_inclusion": false,
+      "category": "tech-mobs",
+      "project_url": "https://www.curseforge.com/minecraft/mc-mods/automechs",
+      "survey_version": "0.2.0",
+      "release_channel": "alpha",
+      "priority": "supporting",
+      "survey_date": "2026-11-20",
+      "notes": "FE-powered programmable mining, farming, building and combat mechs; alpha and overlaps other storage automation; not hostile enemy addition.",
+      "combat_role": "friendly-programmable-working-mechs",
+      "packwiz_installed": false,
+      "compatibility": "1.21.1 NeoForge provider metadata only; no combined runtime validation"
+    },
+    {
+      "id": "chronofall",
+      "name": "Chronofall (formerly Robotica)",
+      "status": "researching",
+      "selection_state": "unselected_mob_survey",
+      "targeted_inclusion": false,
+      "category": "tech-mobs",
+      "project_url": "https://modrinth.com/mod/chronofall",
+      "survey_version": "2.0.0",
+      "release_channel": "release",
+      "priority": "high",
+      "survey_date": "2026-11-20",
+      "notes": "Night chrono-rift falling pods guarded by laser-firing Sentinels, own tech/weapons and allied drones/mechs. 1.21.1 NeoForge requires >=21.1.219 per upstream.",
+      "combat_role": "hostile-sentinels-and-tech-crash-sites",
+      "packwiz_installed": false,
+      "compatibility": "1.21.1 NeoForge provider metadata only; no combined runtime validation"
+    },
+    {
+      "id": "create-bionics",
+      "name": "Create: Bionics",
+      "status": "researching",
+      "selection_state": "unselected_mob_survey",
+      "targeted_inclusion": false,
+      "category": "tech-mobs",
+      "project_url": "https://modrinth.com/mod/create-bionics",
+      "survey_version": "2.5.2",
+      "release_channel": "release",
+      "priority": "supporting",
+      "survey_date": "2026-11-20",
+      "notes": "Five craftable assistance robots, not hostile enemies. Optional companion opportunity if Create is selected.",
+      "combat_role": "friendly-robotic-animals",
+      "packwiz_installed": false,
+      "compatibility": "1.21.1 NeoForge provider metadata only; no combined runtime validation"
+    },
+    {
+      "id": "cybernetics",
+      "name": "Cybernetics",
+      "status": "researching",
+      "selection_state": "unselected_mob_survey",
+      "targeted_inclusion": false,
+      "category": "tech-mobs",
+      "project_url": "https://modrinth.com/mod/createcybernetics",
+      "survey_version": "0.5.3-HOTFIX",
+      "release_channel": "release",
+      "priority": "high",
+      "survey_date": "2026-11-20",
+      "notes": "Most direct Integrated Boogaloo source. Cyberzombie, Cyberskeleton, Smasher and Ripper, implants/surgery; latest 1.21.1 hotfix Nov 19, 2026. Audit worldgen and ability balance. Do not combine with Cyberware forks without ID conflict review.",
+      "combat_role": "hostile-cyborgs-and-player-augmentation",
+      "packwiz_installed": false,
+      "compatibility": "1.21.1 NeoForge provider metadata only; no combined runtime validation"
+    },
+    {
+      "id": "cyberware-ce",
+      "name": "Cyberware CE",
+      "status": "researching",
+      "selection_state": "unselected_mob_survey",
+      "targeted_inclusion": false,
+      "category": "tech-mobs",
+      "project_url": "https://www.curseforge.com/minecraft/mc-mods/cyberware-ce",
+      "survey_version": "0.3.0",
+      "release_channel": "beta",
+      "priority": "low",
+      "survey_date": "2026-11-20",
+      "notes": "Independent unofficial beta port of Cyberware, recent small project. Explicitly research only; overlaps Cybernetics and Reforged.",
+      "combat_role": "cyberware-port-experimental",
+      "packwiz_installed": false,
+      "compatibility": "1.21.1 NeoForge provider metadata only; no combined runtime validation"
+    },
+    {
+      "id": "cyberware-reforged",
+      "name": "Cyberware: Reforged",
+      "status": "researching",
+      "selection_state": "unselected_mob_survey",
+      "targeted_inclusion": false,
+      "category": "tech-mobs",
+      "project_url": "https://www.curseforge.com/minecraft/mc-mods/cyberware-reforged",
+      "survey_version": "1.7.1",
+      "release_channel": "release",
+      "priority": "alternative",
+      "survey_date": "2026-11-20",
+      "notes": "Unofficial original Cyberware/Robotic Parts port; examine enemy mobs before recommending as hostile roster. Competes with Cybernetics, avoid co-installation until IDs/progression compatibility examined.",
+      "combat_role": "cybernetic-player-system-possible-mobs",
+      "packwiz_installed": false,
+      "compatibility": "1.21.1 NeoForge provider metadata only; no combined runtime validation"
+    },
+    {
+      "id": "guard-bot-mod",
+      "name": "Guard Bot Mod",
+      "status": "researching",
+      "selection_state": "unselected_mob_survey",
+      "targeted_inclusion": false,
+      "category": "tech-mobs",
+      "project_url": "https://www.curseforge.com/minecraft/mc-mods/guard-bot-mod",
+      "survey_version": "1.0.4",
+      "release_channel": "release",
+      "priority": "supporting",
+      "survey_date": "2026-11-20",
+      "notes": "Armored roaming robots attack hostile mobs; allied/defensive only, not new enemy faction.",
+      "combat_role": "friendly-robot-guards",
+      "packwiz_installed": false,
+      "compatibility": "1.21.1 NeoForge provider metadata only; no combined runtime validation"
+    },
+    {
+      "id": "dwarven-automatons",
+      "name": "Mebahel's Creatures: Dwarven Automatons",
+      "status": "researching",
+      "selection_state": "unselected_mob_survey",
+      "targeted_inclusion": false,
+      "category": "tech-mobs",
+      "project_url": "https://modrinth.com/mod/mebahels-creatures-dwarven-automatons",
+      "survey_version": null,
+      "release_channel": "release-search",
+      "priority": "medium",
+      "survey_date": "2026-11-20",
+      "notes": "Mechanical spiders, sphere transformers, centurions and Dwemer ruins. NeoForge documentation indicates Syntra Connector and Forgified Fabric API; compatibility bridge is a material blocker until verified.",
+      "combat_role": "hostile-ancient-machines",
+      "packwiz_installed": false,
+      "compatibility": "1.21.1 NeoForge provider metadata only; no combined runtime validation"
+    },
+    {
+      "id": "mechafauna",
+      "name": "Mechafauna",
+      "status": "researching",
+      "selection_state": "unselected_mob_survey",
+      "targeted_inclusion": false,
+      "category": "tech-mobs",
+      "project_url": "https://www.curseforge.com/minecraft/mc-mods/mechafauna",
+      "survey_version": "1.3.0",
+      "release_channel": "release",
+      "priority": "high",
+      "survey_date": "2026-11-20",
+      "notes": "1.21.1-specific 1.3.0 release; flying saucer mothership, mechanical hounds/drones, elite mobs and structures. Check licensing, quality and worldgen/performance.",
+      "combat_role": "hostile-mechanical-creatures-and-boss",
+      "packwiz_installed": false,
+      "compatibility": "1.21.1 NeoForge provider metadata only; no combined runtime validation"
+    },
+    {
+      "id": "mekanite-mobs",
+      "name": "Mekanite Mobs",
+      "status": "researching",
+      "selection_state": "unselected_mob_survey",
+      "targeted_inclusion": false,
+      "category": "tech-mobs",
+      "project_url": "https://www.curseforge.com/minecraft/mc-mods/mekamobs",
+      "survey_version": "1.0.6VNEON",
+      "release_channel": "release",
+      "priority": "high",
+      "survey_date": "2026-11-20",
+      "notes": "Mekanism-themed hostile mobs, special animations, Mekanism drops; requires Mekanism and GeckoLib (verify exact file). Check tech resource drops and spawn density.",
+      "combat_role": "hostile-tech-creatures",
+      "packwiz_installed": false,
+      "compatibility": "1.21.1 NeoForge provider metadata only; no combined runtime validation"
+    },
+    {
+      "id": "robot-dinos",
+      "name": "Robot Dinos",
+      "status": "researching",
+      "selection_state": "unselected_mob_survey",
+      "targeted_inclusion": false,
+      "category": "tech-mobs",
+      "project_url": "https://www.curseforge.com/minecraft/mc-mods/robot-dinos",
+      "survey_version": "1.0.3",
+      "release_channel": "release",
+      "priority": "supporting",
+      "survey_date": "2026-11-20",
+      "notes": "Buildable modular robotic mount; NOT naturally hostile, fuel features WIP according to upstream.",
+      "combat_role": "craftable-ridable-robot-dinosaur",
+      "packwiz_installed": false,
+      "compatibility": "1.21.1 NeoForge provider metadata only; no combined runtime validation"
+    },
+    {
+      "id": "the-cyborg-age",
+      "name": "The Cyborg Age",
+      "status": "researching",
+      "selection_state": "unselected_mob_survey",
+      "targeted_inclusion": false,
+      "category": "tech-mobs",
+      "project_url": "https://www.curseforge.com/minecraft/mc-mods/the-cyborg-age",
+      "survey_version": "0.13.0",
+      "release_channel": "release",
+      "priority": "high",
+      "survey_date": "2026-11-20",
+      "notes": "Cyborg scouts after Ender Dragon death drop beacons to summon waves; cybernetic upgrade items. Distinct self-contained wave model, possible overlap with Cybernetics.",
+      "combat_role": "hostile-cyborg-waves-and-implants",
+      "packwiz_installed": false,
+      "compatibility": "1.21.1 NeoForge provider metadata only; no combined runtime validation"
     },
     {
       "id": "akashic-tome",
       "name": "Akashic Tome",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://www.curseforge.com/minecraft/mc-mods/250577",
       "category": "tmm-carryover",
       "tmm_category": "qol",
@@ -702,12 +1101,16 @@
       "source_revision": "7d1be155bf1334995b65ebe88566bd4d7ae54635",
       "survey_date": "2026-11-20",
       "notes": "TMM historical source roster; index entry appears on donor branch; do not copy donor version without current upstream/dependency review. May be useful for tech guide consolidation; review whether core mods have better native manuals.",
-      "packwiz_installed": false
+      "packwiz_installed": false,
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "almostunified",
       "name": "Almost Unified",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://modrinth.com/mod/almostunified/version/e8iYxxI3",
       "category": "tmm-carryover",
       "tmm_category": "compatibility",
@@ -719,12 +1122,16 @@
       "source_revision": "7d1be155bf1334995b65ebe88566bd4d7ae54635",
       "survey_date": "2026-11-20",
       "notes": "TMM historical source roster; index entry appears on donor branch; do not copy donor version without current upstream/dependency review.",
-      "packwiz_installed": false
+      "packwiz_installed": false,
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "appleskin",
       "name": "AppleSkin",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://modrinth.com/mod/EsAfCjCV",
       "category": "tmm-carryover",
       "tmm_category": "qol",
@@ -736,12 +1143,16 @@
       "source_revision": "7d1be155bf1334995b65ebe88566bd4d7ae54635",
       "survey_date": "2026-11-20",
       "notes": "TMM historical source roster; index entry appears on donor branch; do not copy donor version without current upstream/dependency review.",
-      "packwiz_installed": false
+      "packwiz_installed": false,
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "aquaculture",
       "name": "Aquaculture 2",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://www.curseforge.com/minecraft/mc-mods/60028",
       "category": "tmm-carryover",
       "tmm_category": "food",
@@ -753,12 +1164,16 @@
       "source_revision": "7d1be155bf1334995b65ebe88566bd4d7ae54635",
       "survey_date": "2026-11-20",
       "notes": "TMM historical source roster; index entry appears on donor branch; do not copy donor version without current upstream/dependency review.",
-      "packwiz_installed": false
+      "packwiz_installed": false,
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "attributefix",
       "name": "AttributeFix",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://www.curseforge.com/minecraft/mc-mods/attributefix/files/7115922",
       "category": "tmm-carryover",
       "tmm_category": "qol",
@@ -770,12 +1185,16 @@
       "source_revision": "7d1be155bf1334995b65ebe88566bd4d7ae54635",
       "survey_date": "2026-11-20",
       "notes": "TMM historical source roster; index entry appears on donor branch; do not copy donor version without current upstream/dependency review.",
-      "packwiz_installed": false
+      "packwiz_installed": false,
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "better-advancements",
       "name": "Better Advancements",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://www.curseforge.com/minecraft/mc-mods/272515",
       "category": "tmm-carryover",
       "tmm_category": "qol",
@@ -787,12 +1206,16 @@
       "source_revision": "7d1be155bf1334995b65ebe88566bd4d7ae54635",
       "survey_date": "2026-11-20",
       "notes": "TMM historical source roster; index entry appears on donor branch; do not copy donor version without current upstream/dependency review.",
-      "packwiz_installed": false
+      "packwiz_installed": false,
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "bountiful",
       "name": "Bountiful",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://modrinth.com/mod/bountiful/version/swTb6NU9",
       "category": "tmm-carryover",
       "tmm_category": "qol",
@@ -804,12 +1227,16 @@
       "source_revision": "7d1be155bf1334995b65ebe88566bd4d7ae54635",
       "survey_date": "2026-11-20",
       "notes": "TMM historical source roster; index entry appears on donor branch; do not copy donor version without current upstream/dependency review. Beta; inspect bounty integration and reward balance; do not copy magic-specific reward pools.",
-      "packwiz_installed": false
+      "packwiz_installed": false,
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "brewin-and-chewin",
       "name": "Brewin' And Chewin'",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://modrinth.com/mod/brewin-and-chewin/version/MbcR48Ou",
       "category": "tmm-carryover",
       "tmm_category": "food_beverage",
@@ -821,12 +1248,16 @@
       "source_revision": "7d1be155bf1334995b65ebe88566bd4d7ae54635",
       "survey_date": "2026-11-20",
       "notes": "TMM historical source roster; index entry appears on donor branch; do not copy donor version without current upstream/dependency review.",
-      "packwiz_installed": false
+      "packwiz_installed": false,
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "clumps",
       "name": "Clumps",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://modrinth.com/mod/Wnxd13zP",
       "category": "tmm-carryover",
       "tmm_category": "qol",
@@ -838,12 +1269,16 @@
       "source_revision": "7d1be155bf1334995b65ebe88566bd4d7ae54635",
       "survey_date": "2026-11-20",
       "notes": "TMM historical source roster; index entry appears on donor branch; do not copy donor version without current upstream/dependency review.",
-      "packwiz_installed": false
+      "packwiz_installed": false,
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "cocktails-delight",
       "name": "Cocktails Delight",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://www.curseforge.com/minecraft/mc-mods/cocktails-delight/files/9482953",
       "category": "tmm-carryover",
       "tmm_category": "food_beverage",
@@ -855,12 +1290,16 @@
       "source_revision": "7d1be155bf1334995b65ebe88566bd4d7ae54635",
       "survey_date": "2026-11-20",
       "notes": "TMM historical source roster; index entry appears on donor branch; do not copy donor version without current upstream/dependency review.",
-      "packwiz_installed": false
+      "packwiz_installed": false,
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "colorful-hearts",
       "name": "Colorful Hearts",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://modrinth.com/mod/colorful-hearts/version/us0gze50",
       "category": "tmm-carryover",
       "tmm_category": "qol",
@@ -872,12 +1311,16 @@
       "source_revision": "7d1be155bf1334995b65ebe88566bd4d7ae54635",
       "survey_date": "2026-11-20",
       "notes": "TMM historical source roster; index entry appears on donor branch; do not copy donor version without current upstream/dependency review.",
-      "packwiz_installed": false
+      "packwiz_installed": false,
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "comforts",
       "name": "Comforts",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://modrinth.com/mod/comforts/version/3kpPjcTc",
       "category": "tmm-carryover",
       "tmm_category": "qol",
@@ -889,12 +1332,16 @@
       "source_revision": "7d1be155bf1334995b65ebe88566bd4d7ae54635",
       "survey_date": "2026-11-20",
       "notes": "TMM historical source roster; index entry appears on donor branch; do not copy donor version without current upstream/dependency review.",
-      "packwiz_installed": false
+      "packwiz_installed": false,
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "controlling",
       "name": "Controlling",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://modrinth.com/mod/xv94TkTM",
       "category": "tmm-carryover",
       "tmm_category": "qol",
@@ -906,12 +1353,16 @@
       "source_revision": "7d1be155bf1334995b65ebe88566bd4d7ae54635",
       "survey_date": "2026-11-20",
       "notes": "TMM historical source roster; index entry appears on donor branch; do not copy donor version without current upstream/dependency review.",
-      "packwiz_installed": false
+      "packwiz_installed": false,
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "cooking-for-blockheads",
       "name": "Cooking for Blockheads",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://modrinth.com/mod/cooking-for-blockheads/version/MQCIy6VF",
       "category": "tmm-carryover",
       "tmm_category": "food",
@@ -923,12 +1374,16 @@
       "source_revision": "7d1be155bf1334995b65ebe88566bd4d7ae54635",
       "survey_date": "2026-11-20",
       "notes": "TMM historical source roster; index entry appears on donor branch; do not copy donor version without current upstream/dependency review.",
-      "packwiz_installed": false
+      "packwiz_installed": false,
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "corail-tombstone",
       "name": "Corail Tombstone",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://modrinth.com/mod/YT5K34AB",
       "category": "tmm-carryover",
       "tmm_category": "qol",
@@ -940,12 +1395,16 @@
       "source_revision": "7d1be155bf1334995b65ebe88566bd4d7ae54635",
       "survey_date": "2026-11-20",
       "notes": "TMM historical source roster; index entry appears on donor branch; do not copy donor version without current upstream/dependency review. Review conflict with Smart Keep Inventory and death-handling design.",
-      "packwiz_installed": false
+      "packwiz_installed": false,
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "crafting-tweaks",
       "name": "Crafting Tweaks",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://www.curseforge.com/minecraft/mc-mods/233071",
       "category": "tmm-carryover",
       "tmm_category": "qol",
@@ -957,12 +1416,16 @@
       "source_revision": "7d1be155bf1334995b65ebe88566bd4d7ae54635",
       "survey_date": "2026-11-20",
       "notes": "TMM historical source roster; index entry appears on donor branch; do not copy donor version without current upstream/dependency review.",
-      "packwiz_installed": false
+      "packwiz_installed": false,
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "default-options",
       "name": "Default Options",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://modrinth.com/mod/WEg59z5b/version/1zt17WsC",
       "category": "tmm-carryover",
       "tmm_category": "qol",
@@ -974,12 +1437,16 @@
       "source_revision": "7d1be155bf1334995b65ebe88566bd4d7ae54635",
       "survey_date": "2026-11-20",
       "notes": "TMM historical source roster; index entry appears on donor branch; do not copy donor version without current upstream/dependency review.",
-      "packwiz_installed": false
+      "packwiz_installed": false,
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "embeddium",
       "name": "Embeddium",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://modrinth.com/mod/sk9rgfiA",
       "category": "tmm-carryover",
       "tmm_category": "performance",
@@ -991,12 +1458,16 @@
       "source_revision": "7d1be155bf1334995b65ebe88566bd4d7ae54635",
       "survey_date": "2026-11-20",
       "notes": "TMM historical source roster; index entry appears on donor branch; do not copy donor version without current upstream/dependency review.",
-      "packwiz_installed": false
+      "packwiz_installed": false,
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "enchantment-descriptions",
       "name": "Enchantment Descriptions",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://www.curseforge.com/minecraft/mc-mods/250419",
       "category": "tmm-carryover",
       "tmm_category": "qol",
@@ -1008,12 +1479,16 @@
       "source_revision": "7d1be155bf1334995b65ebe88566bd4d7ae54635",
       "survey_date": "2026-11-20",
       "notes": "TMM historical source roster; index entry appears on donor branch; do not copy donor version without current upstream/dependency review.",
-      "packwiz_installed": false
+      "packwiz_installed": false,
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "entity-culling",
       "name": "Entity Culling",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://modrinth.com/mod/NNAgCjsB",
       "category": "tmm-carryover",
       "tmm_category": "performance",
@@ -1025,12 +1500,16 @@
       "source_revision": "7d1be155bf1334995b65ebe88566bd4d7ae54635",
       "survey_date": "2026-11-20",
       "notes": "TMM historical source roster; index entry appears on donor branch; do not copy donor version without current upstream/dependency review.",
-      "packwiz_installed": false
+      "packwiz_installed": false,
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "extreme-sound-muffler",
       "name": "Extreme Sound Muffler",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://modrinth.com/mod/5IIKsxiL",
       "category": "tmm-carryover",
       "tmm_category": "qol",
@@ -1042,12 +1521,16 @@
       "source_revision": "7d1be155bf1334995b65ebe88566bd4d7ae54635",
       "survey_date": "2026-11-20",
       "notes": "TMM historical source roster; index entry appears on donor branch; do not copy donor version without current upstream/dependency review.",
-      "packwiz_installed": false
+      "packwiz_installed": false,
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "farmers-delight",
       "name": "Farmer's Delight",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://www.curseforge.com/minecraft/mc-mods/398521",
       "category": "tmm-carryover",
       "tmm_category": "food",
@@ -1059,12 +1542,16 @@
       "source_revision": "7d1be155bf1334995b65ebe88566bd4d7ae54635",
       "survey_date": "2026-11-20",
       "notes": "TMM historical source roster; index entry appears on donor branch; do not copy donor version without current upstream/dependency review.",
-      "packwiz_installed": false
+      "packwiz_installed": false,
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "farming-for-blockheads",
       "name": "Farming for Blockheads",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://www.curseforge.com/minecraft/mc-mods/261924",
       "category": "tmm-carryover",
       "tmm_category": "food",
@@ -1076,12 +1563,16 @@
       "source_revision": "7d1be155bf1334995b65ebe88566bd4d7ae54635",
       "survey_date": "2026-11-20",
       "notes": "TMM historical source roster; index entry appears on donor branch; do not copy donor version without current upstream/dependency review.",
-      "packwiz_installed": false
+      "packwiz_installed": false,
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "ferritecore",
       "name": "FerriteCore",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://modrinth.com/mod/uXXizFIs",
       "category": "tmm-carryover",
       "tmm_category": "performance",
@@ -1093,12 +1584,16 @@
       "source_revision": "7d1be155bf1334995b65ebe88566bd4d7ae54635",
       "survey_date": "2026-11-20",
       "notes": "TMM historical source roster; index entry appears on donor branch; do not copy donor version without current upstream/dependency review.",
-      "packwiz_installed": false
+      "packwiz_installed": false,
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "ftb-essentials",
       "name": "FTB Essentials (NeoForge)",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://www.curseforge.com/minecraft/mc-mods/ftb-essentials/files/8442866",
       "category": "tmm-carryover",
       "tmm_category": "qol",
@@ -1110,7 +1605,11 @@
       "source_revision": "7d1be155bf1334995b65ebe88566bd4d7ae54635",
       "survey_date": "2026-11-20",
       "notes": "TMM historical source roster; index entry appears on donor branch; do not copy donor version without current upstream/dependency review.",
-      "packwiz_installed": false
+      "packwiz_installed": false,
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "get-it-together-drops",
@@ -1127,12 +1626,17 @@
       "source_revision": "7d1be155bf1334995b65ebe88566bd4d7ae54635",
       "survey_date": "2026-11-20",
       "notes": "TMM historical source roster; index entry appears on donor branch; do not copy donor version without current upstream/dependency review. DONOR URL names Minecraft 1.21.5 despite TMT 1.21.1 target; HOLD pending artifact metadata review.",
-      "packwiz_installed": false
+      "packwiz_installed": false,
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "conditional_target",
+      "selection_gate": "TMM donor filename points to Minecraft 1.21.5, verify exact 1.21.1 NeoForge artifact"
     },
     {
       "id": "harvest-with-ease",
       "name": "Harvest with Ease",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://www.curseforge.com/minecraft/mc-mods/602171",
       "category": "tmm-carryover",
       "tmm_category": "qol",
@@ -1144,12 +1648,16 @@
       "source_revision": "7d1be155bf1334995b65ebe88566bd4d7ae54635",
       "survey_date": "2026-11-20",
       "notes": "TMM historical source roster; index entry appears on donor branch; do not copy donor version without current upstream/dependency review.",
-      "packwiz_installed": false
+      "packwiz_installed": false,
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "treechop",
       "name": "HT's TreeChop",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://modrinth.com/mod/treechop/version/iLXWmfax",
       "category": "tmm-carryover",
       "tmm_category": "qol",
@@ -1161,12 +1669,16 @@
       "source_revision": "7d1be155bf1334995b65ebe88566bd4d7ae54635",
       "survey_date": "2026-11-20",
       "notes": "TMM historical source roster; index entry appears on donor branch; do not copy donor version without current upstream/dependency review.",
-      "packwiz_installed": false
+      "packwiz_installed": false,
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "immediatelyfast",
       "name": "ImmediatelyFast",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://modrinth.com/mod/5ZwdcRci",
       "category": "tmm-carryover",
       "tmm_category": "performance",
@@ -1178,12 +1690,16 @@
       "source_revision": "7d1be155bf1334995b65ebe88566bd4d7ae54635",
       "survey_date": "2026-11-20",
       "notes": "TMM historical source roster; index entry appears on donor branch; do not copy donor version without current upstream/dependency review.",
-      "packwiz_installed": false
+      "packwiz_installed": false,
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "inventory-tweaks-refoxed",
       "name": "Inventory Tweaks — ReFoxed",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://www.curseforge.com/minecraft/mc-mods/inventory-tweaks-refoxed/files/all",
       "category": "tmm-carryover",
       "tmm_category": "qol",
@@ -1195,12 +1711,16 @@
       "source_revision": "7d1be155bf1334995b65ebe88566bd4d7ae54635",
       "survey_date": "2026-11-20",
       "notes": "TMM historical source roster; index entry appears on donor branch; do not copy donor version without current upstream/dependency review.",
-      "packwiz_installed": false
+      "packwiz_installed": false,
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "jade",
       "name": "Jade",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://modrinth.com/mod/nvQzSEkH",
       "category": "tmm-carryover",
       "tmm_category": "qol",
@@ -1212,12 +1732,16 @@
       "source_revision": "7d1be155bf1334995b65ebe88566bd4d7ae54635",
       "survey_date": "2026-11-20",
       "notes": "TMM historical source roster; index entry appears on donor branch; do not copy donor version without current upstream/dependency review.",
-      "packwiz_installed": false
+      "packwiz_installed": false,
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "jei",
       "name": "Just Enough Items",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://modrinth.com/mod/u6dRKJwZ",
       "category": "tmm-carryover",
       "tmm_category": "qol",
@@ -1229,12 +1753,16 @@
       "source_revision": "7d1be155bf1334995b65ebe88566bd4d7ae54635",
       "survey_date": "2026-11-20",
       "notes": "TMM historical source roster; index entry appears on donor branch; do not copy donor version without current upstream/dependency review.",
-      "packwiz_installed": false
+      "packwiz_installed": false,
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "just-enough-resources-jer",
       "name": "Just Enough Resources (JER)",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://modrinth.com/mod/just-enough-resources-jer/version/A2G7NFcD",
       "category": "tmm-carryover",
       "tmm_category": "qol",
@@ -1246,12 +1774,16 @@
       "source_revision": "7d1be155bf1334995b65ebe88566bd4d7ae54635",
       "survey_date": "2026-11-20",
       "notes": "TMM historical source roster; index entry appears on donor branch; do not copy donor version without current upstream/dependency review.",
-      "packwiz_installed": false
+      "packwiz_installed": false,
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "just-zoom",
       "name": "Just Zoom",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://modrinth.com/mod/iAiqcykM",
       "category": "tmm-carryover",
       "tmm_category": "qol",
@@ -1263,12 +1795,16 @@
       "source_revision": "7d1be155bf1334995b65ebe88566bd4d7ae54635",
       "survey_date": "2026-11-20",
       "notes": "TMM historical source roster; index entry appears on donor branch; do not copy donor version without current upstream/dependency review.",
-      "packwiz_installed": false
+      "packwiz_installed": false,
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "keybind-bundles",
       "name": "KeyBind Bundles",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://www.curseforge.com/minecraft/mc-mods/1172594",
       "category": "tmm-carryover",
       "tmm_category": "qol",
@@ -1280,12 +1816,16 @@
       "source_revision": "7d1be155bf1334995b65ebe88566bd4d7ae54635",
       "survey_date": "2026-11-20",
       "notes": "TMM historical source roster; index entry appears on donor branch; do not copy donor version without current upstream/dependency review.",
-      "packwiz_installed": false
+      "packwiz_installed": false,
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "keysets",
       "name": "KeySets",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://github.com/Meneleet-official/keyset/releases/tag/v1.3.0",
       "category": "tmm-carryover",
       "tmm_category": "qol",
@@ -1297,12 +1837,16 @@
       "source_revision": "7d1be155bf1334995b65ebe88566bd4d7ae54635",
       "survey_date": "2026-11-20",
       "notes": "TMM historical source roster; index entry appears on donor branch; do not copy donor version without current upstream/dependency review.",
-      "packwiz_installed": false
+      "packwiz_installed": false,
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "leaves-be-gone",
       "name": "Leaves Be Gone",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://modrinth.com/mod/leaves-be-gone/version/kAbmpvF3",
       "category": "tmm-carryover",
       "tmm_category": "qol",
@@ -1314,12 +1858,16 @@
       "source_revision": "7d1be155bf1334995b65ebe88566bd4d7ae54635",
       "survey_date": "2026-11-20",
       "notes": "TMM historical source roster; index entry appears on donor branch; do not copy donor version without current upstream/dependency review.",
-      "packwiz_installed": false
+      "packwiz_installed": false,
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "lootjs",
       "name": "LootJS",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://modrinth.com/mod/fJFETWDN",
       "category": "tmm-carryover",
       "tmm_category": "qol",
@@ -1331,12 +1879,16 @@
       "source_revision": "7d1be155bf1334995b65ebe88566bd4d7ae54635",
       "survey_date": "2026-11-20",
       "notes": "TMM historical source roster; index entry appears on donor branch; do not copy donor version without current upstream/dependency review.",
-      "packwiz_installed": false
+      "packwiz_installed": false,
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "lootr",
       "name": "Lootr",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://modrinth.com/mod/EltpO5cN",
       "category": "tmm-carryover",
       "tmm_category": "qol",
@@ -1348,12 +1900,16 @@
       "source_revision": "7d1be155bf1334995b65ebe88566bd4d7ae54635",
       "survey_date": "2026-11-20",
       "notes": "TMM historical source roster; index entry appears on donor branch; do not copy donor version without current upstream/dependency review.",
-      "packwiz_installed": false
+      "packwiz_installed": false,
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "modernfix",
       "name": "ModernFix",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://modrinth.com/mod/nmDcB62a",
       "category": "tmm-carryover",
       "tmm_category": "performance",
@@ -1365,12 +1921,16 @@
       "source_revision": "7d1be155bf1334995b65ebe88566bd4d7ae54635",
       "survey_date": "2026-11-20",
       "notes": "TMM historical source roster; index entry appears on donor branch; do not copy donor version without current upstream/dependency review.",
-      "packwiz_installed": false
+      "packwiz_installed": false,
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "more-darkness",
       "name": "More Darkness",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://modrinth.com/mod/more-darkness/version/6jywYHaX",
       "category": "tmm-carryover",
       "tmm_category": "qol",
@@ -1382,12 +1942,16 @@
       "source_revision": "7d1be155bf1334995b65ebe88566bd4d7ae54635",
       "survey_date": "2026-11-20",
       "notes": "TMM historical source roster; index entry appears on donor branch; do not copy donor version without current upstream/dependency review. Aesthetic gameplay change, optional rather than generic QoL.",
-      "packwiz_installed": false
+      "packwiz_installed": false,
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "more-overlays-updated",
       "name": "More Overlays Updated",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://www.curseforge.com/minecraft/mc-mods/391382",
       "category": "tmm-carryover",
       "tmm_category": "qol",
@@ -1399,12 +1963,16 @@
       "source_revision": "7d1be155bf1334995b65ebe88566bd4d7ae54635",
       "survey_date": "2026-11-20",
       "notes": "TMM historical source roster; index entry appears on donor branch; do not copy donor version without current upstream/dependency review.",
-      "packwiz_installed": false
+      "packwiz_installed": false,
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "mouse-tweaks",
       "name": "Mouse Tweaks",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://modrinth.com/mod/aC3cM3Vq",
       "category": "tmm-carryover",
       "tmm_category": "qol",
@@ -1416,12 +1984,16 @@
       "source_revision": "7d1be155bf1334995b65ebe88566bd4d7ae54635",
       "survey_date": "2026-11-20",
       "notes": "TMM historical source roster; index entry appears on donor branch; do not copy donor version without current upstream/dependency review.",
-      "packwiz_installed": false
+      "packwiz_installed": false,
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "my-nethers-delight",
       "name": "My Nether's Delight",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://www.curseforge.com/minecraft/mc-mods/my-nethers-delight/files/8854319",
       "category": "tmm-carryover",
       "tmm_category": "food",
@@ -1433,12 +2005,16 @@
       "source_revision": "7d1be155bf1334995b65ebe88566bd4d7ae54635",
       "survey_date": "2026-11-20",
       "notes": "TMM historical source roster; index entry appears on donor branch; do not copy donor version without current upstream/dependency review.",
-      "packwiz_installed": false
+      "packwiz_installed": false,
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "natures-compass",
       "name": "Nature's Compass",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://www.curseforge.com/minecraft/mc-mods/252848",
       "category": "tmm-carryover",
       "tmm_category": "qol",
@@ -1450,12 +2026,16 @@
       "source_revision": "7d1be155bf1334995b65ebe88566bd4d7ae54635",
       "survey_date": "2026-11-20",
       "notes": "TMM historical source roster; index entry appears on donor branch; do not copy donor version without current upstream/dependency review.",
-      "packwiz_installed": false
+      "packwiz_installed": false,
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "oracle-index",
       "name": "Oracle Index",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://www.curseforge.com/minecraft/mc-mods/1206582",
       "category": "tmm-carryover",
       "tmm_category": "qol",
@@ -1467,12 +2047,16 @@
       "source_revision": "7d1be155bf1334995b65ebe88566bd4d7ae54635",
       "survey_date": "2026-11-20",
       "notes": "TMM historical source roster; index entry appears on donor branch; do not copy donor version without current upstream/dependency review. TMM has magic-oriented ore indexes; review generic tech usefulness.",
-      "packwiz_installed": false
+      "packwiz_installed": false,
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "pams-harvestcraft-2-crops",
       "name": "Pam's HarvestCraft 2 — Crops",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://www.curseforge.com/minecraft/mc-mods/361385",
       "category": "tmm-carryover",
       "tmm_category": "food",
@@ -1484,12 +2068,16 @@
       "source_revision": "7d1be155bf1334995b65ebe88566bd4d7ae54635",
       "survey_date": "2026-11-20",
       "notes": "TMM historical source roster; index entry appears on donor branch; do not copy donor version without current upstream/dependency review.",
-      "packwiz_installed": false
+      "packwiz_installed": false,
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "pams-harvestcraft-2-food-core",
       "name": "Pam's HarvestCraft 2 — Food Core",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://www.curseforge.com/minecraft/mc-mods/372534",
       "category": "tmm-carryover",
       "tmm_category": "food",
@@ -1501,12 +2089,16 @@
       "source_revision": "7d1be155bf1334995b65ebe88566bd4d7ae54635",
       "survey_date": "2026-11-20",
       "notes": "TMM historical source roster; index entry appears on donor branch; do not copy donor version without current upstream/dependency review.",
-      "packwiz_installed": false
+      "packwiz_installed": false,
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "pams-harvestcraft-2-food-extended",
       "name": "Pam's HarvestCraft 2 — Food Extended",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://www.curseforge.com/minecraft/mc-mods/402231",
       "category": "tmm-carryover",
       "tmm_category": "food",
@@ -1518,12 +2110,16 @@
       "source_revision": "7d1be155bf1334995b65ebe88566bd4d7ae54635",
       "survey_date": "2026-11-20",
       "notes": "TMM historical source roster; index entry appears on donor branch; do not copy donor version without current upstream/dependency review.",
-      "packwiz_installed": false
+      "packwiz_installed": false,
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "pams-harvestcraft-2-trees",
       "name": "Pam's HarvestCraft 2 — Trees",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://www.curseforge.com/minecraft/mc-mods/365460",
       "category": "tmm-carryover",
       "tmm_category": "food",
@@ -1535,12 +2131,16 @@
       "source_revision": "7d1be155bf1334995b65ebe88566bd4d7ae54635",
       "survey_date": "2026-11-20",
       "notes": "TMM historical source roster; index entry appears on donor branch; do not copy donor version without current upstream/dependency review.",
-      "packwiz_installed": false
+      "packwiz_installed": false,
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "polymorph",
       "name": "Polymorph",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://modrinth.com/mod/tagwiZkJ",
       "category": "tmm-carryover",
       "tmm_category": "qol",
@@ -1552,12 +2152,16 @@
       "source_revision": "7d1be155bf1334995b65ebe88566bd4d7ae54635",
       "survey_date": "2026-11-20",
       "notes": "TMM historical source roster; index entry appears on donor branch; do not copy donor version without current upstream/dependency review.",
-      "packwiz_installed": false
+      "packwiz_installed": false,
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "prefab",
       "name": "Prefab",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://modrinth.com/mod/prefab/version/1.0.9",
       "category": "tmm-carryover",
       "tmm_category": "qol",
@@ -1569,12 +2173,16 @@
       "source_revision": "7d1be155bf1334995b65ebe88566bd4d7ae54635",
       "survey_date": "2026-11-20",
       "notes": "TMM historical source roster; index entry appears on donor branch; do not copy donor version without current upstream/dependency review.",
-      "packwiz_installed": false
+      "packwiz_installed": false,
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "simple-backups",
       "name": "Simple Backups",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://www.curseforge.com/minecraft/mc-mods/583228",
       "category": "tmm-carryover",
       "tmm_category": "server_utility",
@@ -1586,12 +2194,16 @@
       "source_revision": "7d1be155bf1334995b65ebe88566bd4d7ae54635",
       "survey_date": "2026-11-20",
       "notes": "TMM historical source roster; index entry appears on donor branch; do not copy donor version without current upstream/dependency review.",
-      "packwiz_installed": false
+      "packwiz_installed": false,
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "smart-keep-inventory",
       "name": "Smart Keep Inventory",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://modrinth.com/mod/smart-keep-inventory/version/1.21.1-1.0.1-neoforge",
       "category": "tmm-carryover",
       "tmm_category": "qol",
@@ -1603,12 +2215,16 @@
       "source_revision": "7d1be155bf1334995b65ebe88566bd4d7ae54635",
       "survey_date": "2026-11-20",
       "notes": "TMM historical source roster; index entry appears on donor branch; do not copy donor version without current upstream/dependency review. TMM has game-specific Newbie/boss conditions; only copy mod, not behavior without separate approval.",
-      "packwiz_installed": false
+      "packwiz_installed": false,
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "spark",
       "name": "spark",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://www.curseforge.com/minecraft/mc-mods/361579",
       "category": "tmm-carryover",
       "tmm_category": "server_utility",
@@ -1620,12 +2236,16 @@
       "source_revision": "7d1be155bf1334995b65ebe88566bd4d7ae54635",
       "survey_date": "2026-11-20",
       "notes": "TMM historical source roster; index entry appears on donor branch; do not copy donor version without current upstream/dependency review.",
-      "packwiz_installed": false
+      "packwiz_installed": false,
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     },
     {
       "id": "trashslot",
       "name": "TrashSlot",
-      "status": "researching",
+      "status": "approved",
       "project_url": "https://modrinth.com/mod/trashslot/version/HY8Ybozd",
       "category": "tmm-carryover",
       "tmm_category": "qol",
@@ -1637,7 +2257,19 @@
       "source_revision": "7d1be155bf1334995b65ebe88566bd4d7ae54635",
       "survey_date": "2026-11-20",
       "notes": "TMM historical source roster; index entry appears on donor branch; do not copy donor version without current upstream/dependency review.",
-      "packwiz_installed": false
+      "packwiz_installed": false,
+      "targeted_inclusion": true,
+      "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
+      "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
+      "selection_state": "targeted"
     }
-  ]
+  ],
+  "target_intake": {
+    "date": "2026-11-20",
+    "source": "owner request",
+    "scope": "all 102 pre-existing technology and TMM food/QoL survey entries, including FACTAS and Draconic Evolution",
+    "version_artifacts_locked": false,
+    "actual_packwiz_pins_added": 0,
+    "selection_summary": "98 targets including Ender IO alternative entries, four conditional targets, 12 mob research-only candidates; no actual mod installation"
+  }
 }
