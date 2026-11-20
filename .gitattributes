@@ -1,0 +1,8 @@
+# Stable metadata hashes and cross-platform handling
+*.md text eol=lf
+*.json text eol=lf
+*.toml text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.py text eol=lf
+*.sh text eol=lf

@@ -1,0 +1,36 @@
+name: Quick checks
+
+on:
+  push:
+    branches:
+      - main
+      - test/full-integration
+  pull_request:
+    branches:
+      - main
+      - test/full-integration
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: quick-checks-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  metadata:
+    name: Verify bootstrap / metadata
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate packwiz and register
+        run: python3 scripts/validate_repo.py
+      - name: Run repository unit tests
+        run: python3 -m unittest discover -s tests -v
+
+# Intentional: no full download, assembly, Minecraft boot, Prism package or release.

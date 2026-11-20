@@ -1,0 +1,35 @@
+# Local launcher/game output
+/run/
+/logs/
+/crash-reports/
+/saves/
+/worlds/
+/backups/
+/shaderpacks/
+/resourcepacks/
+*.log
+*.jar
+*.zip
+*.7z
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+*.secret
+*.local
+
+# Python / tooling
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.DS_Store
+Thumbs.db
+
+# Generated packwiz / build output (keep tracked pack.toml and index.toml)
+/build/
+/dist/
+/out/
+.packwiz-cache/
