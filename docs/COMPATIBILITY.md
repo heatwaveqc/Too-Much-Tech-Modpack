@@ -25,3 +25,11 @@ Before an explicitly authorized full assembly or release, survey the *active* pa
 - [Machine-readable research register](../manifest/mods.json) — current statuses: approved core, researching candidates, held mismatches. This research file is **not** an installed-mod index.
 
 Any TMT packwiz pin requires separate exact current source artifact, hash, dependencies, client/server side, redistribution check and reviewed integration PR. TMM's current integration files are an important provenance input but do not grant automatic compatibility or runtime PASS. The next comprehensive build must honor live-test inclusion and owner authorization rules.
+
+## Selected cyberware and themed dimensions — 2026-11-20
+
+Five additional selected systems: Cybernetics, Synthetics, Matter Overdrive (Unofficial Port as tentative single implementation), NeoSync, Create: Chromeware. **Overlap itself is allowed.** Compare actual mod IDs/dependencies, player save attachment ownership, avatar/shell cloning, death and resurrection, accelerated effects, and rendering/client hooks. The only upfront exclusion is incompatible artifacts or conflicting *implementations of the same mod*; ordinary gameplay overlap is deferred to runtime/balance testing.
+
+[Dimension survey](research/THEMATIC-DIMENSIONS-2026-11-20.md) distinguishes Ad Astra's data-defined custom destinations and seeded terrain from runtime-created new dimensions. Its extra 20 research-only entries are not installed or preapproved. Even confirmed version support does not prove that two dimensions can coexist safely or preserve existing worlds.
+
+[Shared Progression target](../manifest/progression-goals.json) records a future reviewed source reuse only; the TMM core remains in development and should not be copied or built until frozen and authorized.
