@@ -30,4 +30,6 @@ This ledger separates confirmed owner direction, bootstrap technical assumptions
 
 | TMT-0021 | 2026-11-20 | Owner-directed | Planet/dimension inclusion goals | **Primary targeted:** Ad Astra: Planets, Stargate Journey, RFTools Dimensions, Infinite Dimensions, Deep Space (Unofficial Port). **Targeted isolated experiments:** MACHINA and Create: Universe. Existing Ad Astra remains targeted. All seven are goals, **not** installed packwiz JARs; experiment outcomes, version/dependency checks, stable save/restart, return routes and performance required before promoting their implementation. Overlap alone is not disqualifying. |
 
+| TMT-0022 | 2026-11-20 | Research only | Biotechnology ecosystem | Survey 24 biotechnology, genetics, medical, living-machine, fermentation, and alien species projects for 1.21.1 NeoForge. Existing core/tech targets (including Industrial Foregoing, Productive Bees, Synthetics, Oritech) remain selected. **New biotech mods are not yet owner-targeted** by the exploratory question. Favor inclusive evaluation, but verify actual hard duplicate port IDs, player gene/state persistence, infection containment, entity simulation and supported release artifacts. |
+
 See [DESIGN.md](DESIGN.md) for the specific choices awaiting discussion.
