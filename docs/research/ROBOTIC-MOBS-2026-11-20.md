@@ -1,10 +1,10 @@
 # Robot and cybernetic enemies — Minecraft 1.21.1 NeoForge
 
-**Surveyed:** 2026-11-20. **No new mob mods approved or installed.** This is separate from the already-targeted 102 tech + TMM food/QoL entries.
+**Surveyed:** 2026-11-20. **Owner update:** Cybernetics is now a targeted cybernetic-progression and mob addition; the remaining 11 entries stay research-only. None is installed or packwiz pinned.
 
 ## What made the Boogaloo Cyborg Zombies?
 
-The [Integrated Boogaloo](https://www.curseforge.com/minecraft/modpacks/integrated-boogaloo) modpack credits **Cybernetics** and NeoSync and discusses Cyberzombie and Cyberskeleton enemy balancing. [Cybernetics](https://modrinth.com/mod/createcybernetics) explicitly adds Cyberzombies, Cyberskeletons, the Smasher augmented Illager, the Ripper surgeon and a complete cyberware system. Its 1.21.1 NeoForge **0.5.3 hotfix dated November 19, 2026** supersedes older 0.5.2 listings.
+The [Integrated Boogaloo](https://www.curseforge.com/minecraft/modpacks/integrated-boogaloo) modpack credits **Cybernetics** and NeoSync and discusses Cyberzombie and Cyberskeleton enemy balancing. [Cybernetics](https://modrinth.com/mod/createcybernetics) explicitly adds Cyberzombies, Cyberskeletons, the Smasher augmented Illager, the Ripper surgeon and a complete cyberware system. Its 1.21.1 NeoForge **0.5.3 release listed November 9, 2026** supersedes older 0.5.2 listings.
 
 ## Most promising actual enemy mods
 
