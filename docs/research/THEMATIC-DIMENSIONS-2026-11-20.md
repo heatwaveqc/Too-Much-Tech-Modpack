@@ -1,6 +1,22 @@
 # Tech-themed dimensions and procedural planet survey
 
-**As of 2026-11-20.** Target platform **Minecraft 1.21.1 / NeoForge 21.1.265 / Java 21** (provisional). Owner asks for an inclusive first pass. **All 20 new entries below are research-only; Ad Astra itself was already selected as part of the earlier 102.** No new dimensions/mods installed, packwiz pinned, built or gameplay tested.
+**As of 2026-11-20.** Target platform **Minecraft 1.21.1 / NeoForge 21.1.265 / Java 21** (provisional). Owner favors an inclusive first pass. **Seven of the 20 newly surveyed dimension entries are now targeted goals; 13 remain research-only.** Existing Ad Astra was already targeted. No new dimensions or JARs installed, packwiz pinned, built or gameplay tested.
+
+## Owner-selected inclusion goals (2026-11-20)
+
+| Phase | Target | Intended capability |
+| --- | --- | --- |
+| Primary | [Ad Astra: Planets](https://www.curseforge.com/minecraft/mc-mods/ad-astra-planets) | Curated solar system, custom planet definitions and seeded terrain |
+| Primary | [Stargate Journey](https://www.curseforge.com/minecraft/mc-mods/sgjourney) | Parallel Stargate travel to Ad Astra and compatible dimensions |
+| Primary | [RFTools Dimensions](https://www.curseforge.com/minecraft/mc-mods/rftools-dimensions) | Player-built powered, programmable dimensions |
+| Primary | [Infinite Dimensions](https://www.curseforge.com/minecraft/mc-mods/infinite-dimensions) | Runtime procedural destination generation with save persistence |
+| Primary | [Deep Space (Unofficial Port)](https://www.curseforge.com/minecraft/mc-mods/deep-space-unofficial-port) | Galaxies, ringworlds, spacecraft and optional procedural star systems |
+| Isolated experiment | [MACHINA](https://modrinth.com/mod/machina-mod) | Investigate claimed infinite procedural planets; verify genuine content and stable multiplayer persistence |
+| Isolated experiment | [Create: Universe](https://www.curseforge.com/minecraft/mc-mods/create-universe) | Investigate procedural cosmos and seamless spacecraft transitions; isolate complex physics/dependencies |
+
+**Selection is a development goal, not a readiness verdict.** Exact Minecraft/NeoForge/provider artifact and transitive dependencies, licensing, combined worldgen, travel/return path, player save/load and server performance are still to be checked. Both experimental targets should first run on disposable standalone worlds before any combined inclusion attempt. Conceptual overlap is not a reason for removal; a proven hard incompatibility is.
+
+
 
 ## Findings worth pursuing
 
@@ -12,7 +28,7 @@
 
 **Travel integration:** [Stargate Journey](https://www.curseforge.com/minecraft/mc-mods/sgjourney) latest 1.21.1 beta 0.6.54 explicitly supports Ad Astra destinations and CC:Tweaked dialing. This is ideal as a parallel way to reach selected destinations without replacing rocket or spaceship methods. [Modded Gateways](https://www.curseforge.com/minecraft/mc-mods/modded-gateways) adds cross-dimension structure/config support; confirm specific dimensions rather than assuming all work.
 
-## Survey inventory (20 research entries)
+## Survey inventory (20 research entries; 7 now targeted goals)
 
 | Mod / source | Candidate version | Category | Compatibility notes |
 | --- | --- | --- | --- |
@@ -70,6 +86,6 @@ Separate systems like Infinite Dimensions / RFTools / Deep Space / MACHINA / Cre
 
 ## Recommendation
 
-Prioritize **Ad Astra + its Planets addon as the authored-world platform** and **RFTools Dimensions + Infinite Dimensions / Deep Space as dynamic-world experiments**. Evaluate MACHINA and Create: Universe in a clean disposable test environment because their claims and dependencies imply a much larger QA burden. Stargate Journey is an especially thematic parallel travel system. All remain candidates pending owner targeting, release/dependency study and separate actual build authorization.
+Prioritize **Ad Astra + its Planets addon as the authored-world platform** and **RFTools Dimensions + Infinite Dimensions / Deep Space as dynamic-world experiments**. Evaluate MACHINA and Create: Universe in a clean disposable test environment because their claims and dependencies imply a much larger QA burden. Stargate Journey is an especially thematic parallel travel system. Seven have been explicitly targeted by the owner. All still require release/dependency verification and separately authorized build/QA; 13 others remain survey-only.
 
 Sources: linked upstream project pages and the [Ad Astra: Planets MODPACK guide](https://github.com/duduslugee/ad-astra-planets/blob/main/docs/MODPACK.md). Dates/versions are research snapshots only.
