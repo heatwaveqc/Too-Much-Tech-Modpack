@@ -2,13 +2,9 @@ name: Quick checks
 
 on:
   push:
-    branches:
-      - main
-      - test/full-integration
+    branches: [main, test/full-integration]
   pull_request:
-    branches:
-      - main
-      - test/full-integration
+    branches: [main, test/full-integration]
   workflow_dispatch:
 
 permissions:
@@ -25,12 +21,17 @@ jobs:
     timeout-minutes: 5
     steps:
       - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Validate packwiz and register
+      - name: Repository CI — packwiz/mod index
         run: python3 scripts/validate_repo.py
-      - name: Run repository unit tests
+      - name: Integration Preflight — local schema/source ownership, read-only
+        run: python3 scripts/validate_integration.py
+      - name: Repository and preflight unit tests
         run: python3 -m unittest discover -s tests -v
 
-# Intentional: no full download, assembly, Minecraft boot, Prism package or release.
+# Deliberately does not download the mod roster, assemble donor streams,
+# boot NeoForge, package Prism, publish artifacts or create releases.
