@@ -126,7 +126,7 @@ def validate(root: Path) -> list[str]:
         if selected is not None and not isinstance(selected, bool):
             errors.append(f"{prefix} targeted_inclusion must be boolean")
         selection = mod.get("selection_state")
-        accepted_states = {"targeted", "targeted_alternative", "conditional_target", "unselected_mob_survey", "unselected_dimension_survey", "unselected_biotech_survey"}
+        accepted_states = {"targeted", "targeted_alternative", "conditional_target", "unselected_mob_survey", "unselected_dimension_survey", "unselected_biotech_survey", "unselected_magitech_survey"}
         if selection is not None and selection not in accepted_states:
             errors.append(f"{prefix} invalid selection_state")
         if selected is True and selection not in {"targeted", "targeted_alternative", "conditional_target"}:
