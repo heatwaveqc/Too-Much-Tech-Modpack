@@ -8,7 +8,7 @@
     "java": 21,
     "loader_status": "provisional"
   },
-  "status_note": "Owner 2026-11-20: previous 102 surveyed tech/TMM carryover targets retained. Cybernetic technology targets added: Cybernetics, Synthetics, Matter Overdrive (Unofficial Port), NeoSync, Create: Chromeware. Overlap alone not a blocker; real crashes/data incompatibility are. Progression module separately targeted as first-party TMM source, with Cyborg/Meatbag/Alien paths goals pending upstream readiness. The new 20 dimensional items are RESEARCH-ONLY, NOT selected, except Ad Astra already in original 102 targets. No packwiz installs. TMT also targets the shared TMM Unified Progression engine (source only, deferred pending upstream readiness), to support future Cyborg, Meatbag, Alien paths. On 2026-11-20 owner selected 5 primary dimension inclusion goals (Ad Astra: Planets, Stargate Journey, RFTools Dimensions, Infinite Dimensions, Deep Space) and 2 isolated experiment goals (MACHINA, Create: Universe). All seven are targets, none installed or verified in a full runtime. Initial biotech survey recorded 24 NEW research-only 1.21.1 NeoForge candidates, including direct biological genetics, living factories, biomedical disease systems, and alien species; none owner-targeted by the broad biotech inquiry. Existing Industrial Foregoing, Productive Bees, Synthetics, Oritech remain targeted. Inclusive overlap policy unchanged.",
+  "status_note": "Owner 2026-11-20: previous 102 surveyed tech/TMM carryover targets retained. Cybernetic technology targets added: Cybernetics, Synthetics, Matter Overdrive (Unofficial Port), NeoSync, Create: Chromeware. Overlap alone not a blocker; real crashes/data incompatibility are. Progression module separately targeted as first-party TMM source, with Cyborg/Meatbag/Alien paths goals pending upstream readiness. The new 20 dimensional items are RESEARCH-ONLY, NOT selected, except Ad Astra already in original 102 targets. No packwiz installs. TMT also targets the shared TMM Unified Progression engine (source only, deferred pending upstream readiness), to support future Cyborg, Meatbag, Alien paths. On 2026-11-20 owner selected 5 primary dimension inclusion goals (Ad Astra: Planets, Stargate Journey, RFTools Dimensions, Infinite Dimensions, Deep Space) and 2 isolated experiment goals (MACHINA, Create: Universe). All seven are targets, none installed or verified in a full runtime. Initial biotech survey recorded 24 NEW research-only 1.21.1 NeoForge candidates, including direct biological genetics, living factories, biomedical disease systems, and alien species; none owner-targeted by the broad biotech inquiry. Existing Industrial Foregoing, Productive Bees, Synthetics, Oritech remain targeted. Inclusive overlap policy unchanged. On 2026-11-20 NEEPMeat added as unselected research-only, held because latest verified 1.20.1 Fabric release cannot run on provisional 1.21.1 NeoForge; re-evaluate future official ports. No install target yet.",
   "donor": {
     "repository": "heatwaveqc/Too-Much-Magic-Modpack",
     "branch": "test/full-integration",
@@ -371,6 +371,25 @@
       "notes": "Invisible pathogens in blocks, air, water, mobs and players, mutation and strain splicing. Author explicitly HIGHLY WIP; broad world-level simulation warrants tick/memory and unwanted infection QA.",
       "packwiz_installed": false,
       "compatibility": "provider-listed Minecraft 1.21.1 NeoForge; no actual TMT jar/dependency/plugin conflicts, save or gameplay runtime tested"
+    },
+    {
+      "id": "neepmeat",
+      "name": "NEEPMeat",
+      "category": "biotechnology",
+      "status": "held",
+      "targeted_inclusion": false,
+      "selection_state": "unselected_biotech_survey",
+      "project_url": "https://modrinth.com/mod/neepmeat",
+      "source_url": "https://codeberg.org/MeatWheeze/NeepMeat",
+      "survey_version": "0.36.1-beta+1.20.1",
+      "release_channel": "beta",
+      "priority": "high-interest-version-blocked",
+      "survey_date": "2026-11-20",
+      "bio_role": "biomechanical-industrial-automation-cosmic-horror",
+      "notes": "NEEPMeat has flesh/meat-based industrial processing, pipes, conveyor logistics, programmable manufacturing computers, unusual power systems, rusty factory equipment, and cosmic-horror flavor. Owner asked for compatibility review on 2026-11-20. Latest verified official CurseForge file 0.36.1-beta+1.20.1 (published 2026-11-18), FABRIC ONLY; NO verified 1.21.1 NeoForge binary or port as of survey. Old connector-specific 0.12.1 alpha is also 1.20.1, not transferable by Sinytra Connector across game versions. Author cautions that Neo/Forge through Connector can be unstable. GitHub archived/moved to Codeberg June 2026; watch official provider and Codeberg repo. Retain as researched future candidate, not approved for installation.",
+      "packwiz_installed": false,
+      "compatibility": "BLOCKED: latest official version targets Minecraft 1.20.1 Fabric; TMT targets 1.21.1 NeoForge. Loader bridging alone cannot resolve game version mismatch.",
+      "review_condition": "Recheck official 1.21.1 NeoForge port or compatible 1.21.1 Fabric port plus proven bridge; inspect license and dependencies; smoke test in disposable world before any inclusion target."
     },
     {
       "id": "patientzero",
@@ -3187,6 +3206,6 @@
     "scope": "102 prior targets plus five cybernetic systems; 4 conditional holds persist",
     "version_artifacts_locked": false,
     "actual_packwiz_pins_added": 0,
-    "selection_summary": "111 targeted, four conditional holds, 11 unselected mob candidates, 13 unselected dimension candidates, 24 new research-only biotech candidates; no packwiz pins"
+    "selection_summary": "111 targeted, four conditional targets, 11 mob research-only, 13 dimension research-only, 24 1.21.1 biotech research-only plus 1 held NEEPMeat (1.20.1 Fabric version block); zero packwiz pins"
   }
 }
