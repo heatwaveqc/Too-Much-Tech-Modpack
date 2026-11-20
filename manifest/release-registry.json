@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "integration_branch": "test/full-integration",
+  "candidate": null,
+  "stable": null,
+  "releases": []
+}

@@ -1,0 +1,12 @@
+# Advisory until a real GitHub ruleset requires review.
+# Shared policy, integration-source, pins, QA evidence and release control
+/AGENTS.md @heatwaveqc
+/.github/workflows/ @heatwaveqc
+/.github/CODEOWNERS @heatwaveqc
+/manifest/ @heatwaveqc
+/pack.toml @heatwaveqc
+/index.toml @heatwaveqc
+/docs/DECISIONS.md @heatwaveqc
+/docs/qa/ @heatwaveqc
+/scripts/validate_repo.py @heatwaveqc
+/scripts/validate_integration.py @heatwaveqc

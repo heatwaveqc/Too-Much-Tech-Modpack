@@ -1,0 +1,6 @@
+{
+  "schema": 1,
+  "baseline": "test/full-integration",
+  "channel": "integration",
+  "streams": []
+}
