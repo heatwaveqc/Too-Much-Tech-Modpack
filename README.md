@@ -20,26 +20,36 @@ These choices reuse known tooling from the sister project for an efficient start
 - [docs/DESIGN.md](docs/DESIGN.md): intent, boundaries, and unresolved gameplay choices.
 - [docs/DECISIONS.md](docs/DECISIONS.md): decision ledger, including provisional assumptions.
 - [docs/WORKFLOW.md](docs/WORKFLOW.md): branches, PRs, ownership, and integration.
-- [docs/QA.md](docs/QA.md): source checks versus authorized Minecraft testing.
+- [docs/BRANCH-LIFECYCLE.md](docs/BRANCH-LIFECYCLE.md): review and retirement, single-writer workstreams, branch budget.
+- [docs/INTEGRATION-SOURCES.md](docs/INTEGRATION-SOURCES.md): immutable donor commits and path ownership.
+- [docs/BUILD-CHANNELS-AND-TESTING.md](docs/BUILD-CHANNELS-AND-TESTING.md): unstable/candidate/stable evidence and build authorization.
+- [docs/SISTER-PROJECT-PARITY.md](docs/SISTER-PROJECT-PARITY.md): exact TMM methods adopted and deliberately not copied.
+- [docs/QA.md](docs/QA.md) and [QA hub](docs/qa/README.md): eight QA levels, A/B/C test handoffs and live-test inclusion.
 - [docs/COMPATIBILITY.md](docs/COMPATIBILITY.md): candidate/installed mod research protocol.
 - [docs/ROADMAP.md](docs/ROADMAP.md): milestones without fictional completion claims.
 - [docs/REPO-SETTINGS.md](docs/REPO-SETTINGS.md): manual GitHub administration checklist.
 - [manifest/mods.json](manifest/mods.json): initially empty mod-intake register.
+- [manifest/integration-sources.json](manifest/integration-sources.json): frozen source stream/provenance registry.
+- [manifest/feature-checklist.json](manifest/feature-checklist.json): evidence-backed feature acceptance ledger.
+- [manifest/live-test-inclusion.json](manifest/live-test-inclusion.json): ready-feature next-build inclusion obligation.
+- [manifest/release-registry.json](manifest/release-registry.json): candidate/stable provenance, currently empty.
 - [pack.toml](pack.toml), [index.toml](index.toml): minimal empty packwiz bootstrap.
-- [scripts/validate_repo.py](scripts/validate_repo.py): local and CI metadata validation.
+- [scripts/validate_repo.py](scripts/validate_repo.py) and [scripts/validate_integration.py](scripts/validate_integration.py): local and CI metadata, frozen-source and evidence validation.
+- [Branch lifecycle advisory](.github/workflows/branch-lifecycle-report.yml): daily read-only branch inventory and PR changed-path overlap.
 
 ## Working model
 
-`main` is the project policy and accepted-source branch. `test/full-integration` is the planned source-integration and QA candidate branch. Work happens on scoped temporary feature branches, normally through PRs. See [docs/WORKFLOW.md](docs/WORKFLOW.md).
+`main` is the project policy and accepted-source branch. `test/full-integration` is the planned source-integration and QA candidate branch. Work happens on scoped temporary feature branches through PRs. The single designated integration writer reconciles shared manifests and packwiz, using frozen donor commits and a ready-for-test inclusion ledger. See [docs/WORKFLOW.md](docs/WORKFLOW.md).
 
 Run the *quick*, non-Minecraft checks from a checkout:
 
 ```bash
 python3 scripts/validate_repo.py
+python3 scripts/validate_integration.py
 python3 -m unittest discover -s tests -v
 ```
 
-These checks do **not** assemble the modpack, launch a server/client, generate a Prism package, or certify mod compatibility. Full pack assembly, full server smoke, Prism packaging, and release promotion require separate owner authorization.
+These checks are **local/schema-only** until external donor verification is implemented, and do **not** assemble the modpack, launch a server/client, generate a Prism package, or certify mod compatibility. Full pack assembly, full server smoke, Prism packaging, and release promotion require separate owner authorization.
 
 ## Next decisions
 

@@ -12,5 +12,7 @@ This ledger separates confirmed owner direction, bootstrap technical assumptions
 | TMT-0006 | 2026-11-20 | Open | Progression | Power, automation, storage, machines, gating and endgame design remain unspecified. |
 | TMT-0007 | 2026-11-20 | Open | Licensing | License for new original repository content and rights for redistributed mod assets must be determined. |
 | TMT-0008 | 2026-11-20 | Bootstrap process | Branches | Use `main` for accepted foundation and `test/full-integration` for source integration; temporary scoped PR branches. |
+| TMT-0009 | 2026-11-20 | Owner-directed | Sister-project development policy | Adopt the mature TMM governance, frozen donor, QA, build authorization, branch hygiene, inclusion and quest-teaching methods; adapt to TMT without copying magic-only gameplay or old command consoles. See [parity map](SISTER-PROJECT-PARITY.md). |
+| TMT-0010 | 2026-11-20 | Bootstrap process | Safe reporting | A read-only daily branch inventory and PR collision advisory is permitted; no automatic branch deletion or full build authorization. |
 
 See [DESIGN.md](DESIGN.md) for the specific choices awaiting discussion.
