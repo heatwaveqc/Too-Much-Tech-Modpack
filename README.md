@@ -1,8 +1,8 @@
 # Too Much Tech — Minecraft 1.21.1 NeoForge
 
-**Status: repository bootstrap; no installed mods or game-tested build.**
+**Status: repository bootstrap with researched candidates; no installed mods or game-tested build.**
 
-Too Much Tech is a technology-focused Minecraft modpack project and a **separate sister project** to [Too Much Magic](https://github.com/heatwaveqc/Too-Much-Magic-Modpack). Its intended themes are engineering, machines, power, automation, logistics, industrial systems, and meaningful technical progression. Its eventual mod roster, gates, balance, and release criteria are **not yet approved**.
+Too Much Tech is a technology-focused Minecraft modpack project and a **separate sister project** to [Too Much Magic](https://github.com/heatwaveqc/Too-Much-Magic-Modpack). Its intended themes are engineering, machines, power, automation, logistics, industrial systems, and meaningful technical progression. Its initial owner-selected tech backbone is **Oritech, Just Dire Things, Mekanism and Draconic Evolution**. Other tech mods, progression gates, balance and release criteria remain under research. No mods are installed yet.
 
 ## Provisional development baseline
 
@@ -28,7 +28,9 @@ These choices reuse known tooling from the sister project for an efficient start
 - [docs/COMPATIBILITY.md](docs/COMPATIBILITY.md): candidate/installed mod research protocol.
 - [docs/ROADMAP.md](docs/ROADMAP.md): milestones without fictional completion claims.
 - [docs/REPO-SETTINGS.md](docs/REPO-SETTINGS.md): manual GitHub administration checklist.
-- [manifest/mods.json](manifest/mods.json): initially empty mod-intake register.
+- [manifest/mods.json](manifest/mods.json): owner-selected core tech, version-scoped tech research, and TMM food/QoL carryover intake; **not installed**.
+- [Tech mod release survey](docs/research/TECH-MODS-2026-11-20.md): 1.21.1 NeoForge candidates and build/overlap risks.
+- [TMM food/QoL carryover survey](docs/research/TMM-FOOD-QOL-CARRYOVER-2026-11-20.md): evidence-based sibling-port plan.
 - [manifest/integration-sources.json](manifest/integration-sources.json): frozen source stream/provenance registry.
 - [manifest/feature-checklist.json](manifest/feature-checklist.json): evidence-backed feature acceptance ledger.
 - [manifest/live-test-inclusion.json](manifest/live-test-inclusion.json): ready-feature next-build inclusion obligation.
@@ -53,6 +55,6 @@ These checks are **local/schema-only** until external donor verification is impl
 
 ## Next decisions
 
-Before adding actual tech mods, record the intended power systems, storage/logistics philosophy, automation style, desired progression gates, and whether any overlaps with Too Much Magic should be shared as maintained components. Track proposed choices in [docs/DESIGN.md](docs/DESIGN.md) and concrete mods in the manifest. The first decision workstream is [Issue #1](https://github.com/heatwaveqc/Too-Much-Tech-Modpack/issues/1).
+Before adding actual tech mods, record the intended power systems, storage/logistics philosophy, automation style and progression gates. This is **fun with tech, not GregTech-style enforced grind**. Official Thermal Expansion is currently held due lack of a 1.21.1 NeoForge release; its independent Thermal-inspired alternative FACTAS is research-only. Track proposed choices in [docs/DESIGN.md](docs/DESIGN.md) and concrete mods in the manifest. The first decision workstream is [Issue #1](https://github.com/heatwaveqc/Too-Much-Tech-Modpack/issues/1).
 
 **No stable, alpha, or playable build exists at bootstrap.**

@@ -1,6 +1,6 @@
 # Mod intake register
 
-`mods.json` records **research and approval state**, not a downloadable mod inventory. Initially the `mods` array is empty. Packwiz `index.toml` is the source of truth for files that would actually be included in a build.
+`mods.json` records **research and approval state**, not a downloadable mod inventory. The 2026-11-20 survey adds core tech approvals and proposed TMM food/QoL carryover **without** adding any packwiz files. Packwiz `index.toml` is the source of truth for files that would actually be included in a build.
 
 Example record (illustrative; NOT an approved mod):
 
@@ -16,6 +16,6 @@ Example record (illustrative; NOT an approved mod):
 ```
 
 Allowed `status` values: `proposed`, `researching`, `approved`, `pinned`, `held`, `excluded`.
-For a `pinned` entry, require `version` and `packwiz_file`, with that metadata path already listed in `index.toml`. Additional keys are allowed for dependencies, file IDs, license, approval issue/decision, load side, SHA-256 and QA results. Do not confuse a `pinned` entry with a boot-tested mod.
+For a `pinned` entry, require `version` and `packwiz_file`, with that metadata path already listed in `index.toml`. Additional research keys (`survey_version`, `release_channel`, `carryover_priority`, `tmm_observed_version`, `tmm_index_path_detected`) are descriptive snapshots, **not** install authorization, resolved source hashes or proof of active TMT pins. Additional keys are allowed for dependencies, file IDs, license, approval issue/decision, load side, SHA-256 and QA results. Do not confuse a `pinned` entry with a boot-tested mod.
 
 Use `python3 scripts/validate_repo.py` locally and the GitHub `Quick checks` job on PRs. Co-edit register and packwiz on one integration-writer branch to avoid collisions.
