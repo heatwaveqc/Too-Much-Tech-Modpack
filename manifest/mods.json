@@ -8,7 +8,7 @@
     "java": 21,
     "loader_status": "provisional"
   },
-  "status_note": "Owner 2026-11-20: previous 102 surveyed tech/TMM carryover targets retained. Cybernetic technology targets added: Cybernetics, Synthetics, Matter Overdrive (Unofficial Port), NeoSync, Create: Chromeware. Overlap alone not a blocker; real crashes/data incompatibility are. Progression module separately targeted as first-party TMM source, with Cyborg/Meatbag/Alien paths goals pending upstream readiness. The new 20 dimensional items are RESEARCH-ONLY, NOT selected, except Ad Astra already in original 102 targets. No packwiz installs.",
+  "status_note": "Owner 2026-11-20: previous 102 surveyed tech/TMM carryover targets retained. Cybernetic technology targets added: Cybernetics, Synthetics, Matter Overdrive (Unofficial Port), NeoSync, Create: Chromeware. Overlap alone not a blocker; real crashes/data incompatibility are. Progression module separately targeted as first-party TMM source, with Cyborg/Meatbag/Alien paths goals pending upstream readiness. The new 20 dimensional items are RESEARCH-ONLY, NOT selected, except Ad Astra already in original 102 targets. No packwiz installs. TMT also targets the shared TMM Unified Progression engine (source only, deferred pending upstream readiness), to support future Cyborg, Meatbag, Alien paths.",
   "donor": {
     "repository": "heatwaveqc/Too-Much-Magic-Modpack",
     "branch": "test/full-integration",
@@ -90,6 +90,29 @@
       "packwiz_installed": false,
       "target_version_policy": "source release candidate only; exact NeoForge 1.21.1 artifact/deps/hash, license and combined runtime validation pending",
       "compatibility": "published NeoForge 1.21.1 release; multi-system compatibility not tested"
+    },
+    {
+      "id": "tmt-unified-progression",
+      "name": "Shared TMM Unified Progression engine (future TMT adapter)",
+      "category": "first-party-integration",
+      "status": "approved",
+      "targeted_inclusion": true,
+      "selection_state": "targeted",
+      "selection_source": "owner 2026-11-20: share TMM Progression core and add Cyborg/Meatbag/Alien goals",
+      "project_url": "https://github.com/heatwaveqc/Too-Much-Magic-Modpack/tree/test/full-integration/compat/progression",
+      "source_repository": "heatwaveqc/Too-Much-Magic-Modpack",
+      "source_path": "compat/progression",
+      "source_reference_sha": "7d1be155bf1334995b65ebe88566bd4d7ae54635",
+      "source_readiness": "blocked_pending_upstream_core_completion",
+      "source_license": "MIT for TMM first-party module per README/LICENSE; verify upstream release and third-party notices",
+      "survey_version": "0.1.0-dev",
+      "release_channel": "first-party-dev",
+      "priority": "owner_target_deferred",
+      "survey_date": "2026-11-20",
+      "notes": "SHARED progression engine candidate, do not fork/duplicate engine now. TMM compat/progression currently source pilot, not fully integrated in-world. Future TMT-specific discipline packages (Cyborg, Meatbag, Alien) should be data/config only with one shared runtime/adapter and no magic-only hooks. Do not import source until TMM engine API/branch owner has frozen stable donor or explicit upstream completion.",
+      "packwiz_installed": false,
+      "compatibility": "Minecraft 1.21.1 NeoForge 21.1.265 Java21 source; TMM runtime/API currently in development; no new JAR assembled or tested for TMT",
+      "target_version_policy": "source target only, freeze TMM exact approved source SHA when upstream ready; no unstable code replay or automatic game assembly"
     },
     {
       "id": "ftb-chunks",
@@ -2710,6 +2733,6 @@
     "scope": "102 prior targets plus five cybernetic systems; 4 conditional holds persist",
     "version_artifacts_locked": false,
     "actual_packwiz_pins_added": 0,
-    "selection_summary": "103 targeted+4 conditional (107 selected), plus 12 unselected mobs and 20 unselected dimension survey records; zero packwiz JAR pins"
+    "selection_summary": "104 currently targeted (including deferred shared Progression core), four conditional holds, 11 unselected robot mobs and 20 unselected dimension candidates; zero packwiz pins"
   }
 }

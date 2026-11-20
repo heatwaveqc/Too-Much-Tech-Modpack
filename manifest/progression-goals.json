@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "survey_date": "2026-11-20",
+  "status": "target-design-only; no progression path JSON, code import, or runtime configuration installed",
+  "engine": {
+    "source_repository": "heatwaveqc/Too-Much-Magic-Modpack",
+    "source_subtree": "compat/progression",
+    "inspected_commit": "7d1be155bf1334995b65ebe88566bd4d7ae54635",
+    "module_id": "tmm_progression",
+    "development_version": "0.1.0-dev",
+    "minecraft": "1.21.1",
+    "neoforge": "21.1.265",
+    "contract": "Single shared runtime engine; cross-pack TMT paths authored as declarative data plus vetted adapter hooks; do not edit magic-only rule code in TMT",
+    "ready_for_import": false,
+    "packwiz_installed": false,
+    "pending": "Wait for upstream public QA/API stabilization and freeze reviewed source SHA"
+  },
+  "paths": [
+    {
+      "id": "tmt:cyborg",
+      "display_name": "Cyborg",
+      "stage": "goal",
+      "theme": "Mechanical and neural augmentation",
+      "candidate_systems": [
+        "oritech",
+        "cybernetics",
+        "synthetics",
+        "create-chromeware",
+        "matter-overdrive-unofficial-port",
+        "neosync"
+      ],
+      "possible_milestones": [
+        "first recognized installed augmentation",
+        "manufacture and install advanced body part",
+        "survive using cybernetic combat capabilities",
+        "integrate replacement body or android system"
+      ],
+      "implementation_requirements": [
+        "Use trusted server-side post-install events; do not reward crafting as installed status",
+        "Preserve ranks across death, shell switch and relog",
+        "Avoid duplicated awards from multiple addon events",
+        "Use configurable compat adapters per mod"
+      ],
+      "mechanics_locked": false
+    },
+    {
+      "id": "tmt:meatbag",
+      "display_name": "Meatbag",
+      "stage": "goal",
+      "theme": "Biological ingenuity, training and physical resilience as an alternative technological fantasy",
+      "candidate_systems": [
+        "tmt-unified-progression",
+        "pams-harvestcraft-2-food-core",
+        "farmers-delight"
+      ],
+      "possible_milestones": [
+        "biological training or endurance",
+        "survive hazardous environments with preparation",
+        "human-scale combat and engineering aptitude",
+        "biological resilience and medicine"
+      ],
+      "implementation_requirements": [
+        "Do not impose a no-implant prohibition unless separately authorized",
+        "Avoid dependency on unapproved biological mods",
+        "Use data-defined gameplay that can coexist with other selected systems"
+      ],
+      "mechanics_locked": false
+    },
+    {
+      "id": "tmt:alien",
+      "display_name": "Alien",
+      "stage": "goal",
+      "theme": "Extraterrestrial discovery, adaptation and optional alien physiology",
+      "candidate_systems": [
+        "ad-astra",
+        "tmt-unified-progression"
+      ],
+      "possible_milestones": [
+        "first verified off-world landing",
+        "research exotic biology or artifacts",
+        "environmental adaptation/alien survival",
+        "discover or adopt alien characteristics"
+      ],
+      "implementation_requirements": [
+        "No invented species/mod required to join",
+        "Separate detecting a planet visit from body/transformation changes",
+        "Future dimensions may add optional data-driven milestones",
+        "Avoid code dependencies before selecting alien biology providers"
+      ],
+      "mechanics_locked": false
+    }
+  ],
+  "open_decisions": [
+    "Are these paths exclusive, compatible, or partially branching? Do NOT impose mutual exclusion by default.",
+    "What specific powers and max ranks fit each path and existing tech mods?",
+    "Do ranks use native Progression XP or Tyz/MXP? Follow shared source wallet contract once frozen.",
+    "How are Cyborg upgrades and NeoSync shell swaps persisted and awarded without duplicate credit?",
+    "How do Alien abilities interact with Ad Astra environments, new procedural dimensions and any future species mods?"
+  ],
+  "qa_gates": [
+    "Upstream Progression engine built and API/version reviewed",
+    "Source donor SHA frozen with explicit ownership",
+    "Three strict data-defined path JSONs validated",
+    "All client/server events or trusted adapters tested",
+    "Save/load, death, shell transfer, dimension travel and relog tested",
+    "No approved full assembly without fresh owner run authorization"
+  ]
+}
