@@ -1,3 +1,5 @@
+> **Owner decision update (2026-11-20):** Botania Revived and preferred Embers Re-Ignited were approved as optional tech-leaning inclusion targets. The original recommendations below are retained for provenance. The competing port Embers Reborn remains **research-only fallback**, not a second intended installed JAR. Neither target has a packwiz pin, dependency lock, or runtime acceptance. See [TMT-0026](../DECISIONS.md).
+
 # Engineering-first magitech: Botania and Embers for Too Much Tech
 
 **Research / recommendation, 2026-11-20.** This is not an owner selection or installed JAR. User asked whether they should be included "for the memes" versus keeping the pack strictly nonmagical.
@@ -28,6 +30,6 @@
 4. Prefer native configs and standard tags/recipes for cross-mod components. Avoid fragile global-tick bridges to convert Mana/Ember/FE/OP simply to claim all power systems are unified.
 5. Preserve TMT's distinctive personality: where TMM explores the magical fantasy, TMT explores **how to industrialize it**.
 
-**Decision state:** recommend **yes, both** to owner, but project register keeps Botania Revived and the two Embers binary alternatives as `researching` / `unselected_magitech_survey` until owner confirms. No packwiz or runtime QA performed.
+**Current decision state:** the owner selected **both** themes. Botania Revived and Embers Re-Ignited are targeted, while Embers Reborn remains an unselected fallback implementation. No packwiz or runtime QA performed.
 
 **Sources checked:** CurseForge/Modrinth product pages and release listings 2026-11-20. Exact dependencies, JAR hashes and terms still need normal source review.

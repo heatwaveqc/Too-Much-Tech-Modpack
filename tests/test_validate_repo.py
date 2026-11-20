@@ -143,6 +143,24 @@ class BootstrapValidationTests(unittest.TestCase):
         }])
         self.assertEqual(validate(self.root), [])
 
+    def test_boss_survey_not_targeted(self):
+        self.write_mods([{
+            "id": "cataclysm", "name": "Cataclysm", "status": "researching",
+            "project_url": "https://www.curseforge.com/minecraft/mc-mods/lendercataclysm",
+            "targeted_inclusion": False, "selection_state": "unselected_boss_survey",
+            "packwiz_installed": False
+        }])
+        self.assertEqual(validate(self.root), [])
+
+    def test_boss_survey_cannot_claim_targeted(self):
+        self.write_mods([{
+            "id": "cataclysm", "name": "Cataclysm", "status": "approved",
+            "project_url": "https://www.curseforge.com/minecraft/mc-mods/lendercataclysm",
+            "targeted_inclusion": True, "selection_state": "unselected_boss_survey",
+            "packwiz_installed": False
+        }])
+        self.assertTrue(any("targeted entry needs" in e for e in validate(self.root)))
+
     def test_rejects_unsafe_index_path(self):
         text = (self.root / "pack.toml").read_text(encoding="utf-8")
         (self.root / "pack.toml").write_text(
