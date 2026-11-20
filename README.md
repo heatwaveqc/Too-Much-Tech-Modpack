@@ -2,7 +2,7 @@
 
 **Status: repository bootstrap with researched candidates; no installed mods or game-tested build.**
 
-Too Much Tech is a technology-focused Minecraft modpack project and a **separate sister project** to [Too Much Magic](https://github.com/heatwaveqc/Too-Much-Magic-Modpack). Its intended themes are engineering, machines, power, automation, logistics, industrial systems, and meaningful technical progression. Its initial owner-selected tech backbone is **Oritech, Just Dire Things, Mekanism and Draconic Evolution**. All 102 technology plus TMM food/QoL survey entries are now targeted for future inclusion, including FACTAS. Actual compatibility, conflicts, progression gates, balance and releases remain under research. No mods are installed yet.
+Too Much Tech is a technology-focused Minecraft modpack project and a **separate sister project** to [Too Much Magic](https://github.com/heatwaveqc/Too-Much-Magic-Modpack). Its intended themes are engineering, machines, power, automation, logistics, industrial systems, and meaningful technical progression. Its initial owner-selected tech backbone is **Oritech, Just Dire Things, Mekanism and Draconic Evolution**. All 102 original technology + TMM food/QoL entries are targeted for future inclusion, including FACTAS. Five additional cybernetic targets (Cybernetics, Synthetics, one Matter Overdrive port, NeoSync, Create: Chromeware) and the deferred **shared TMM Progression engine** are targeted too, with **Cyborg, Meatbag, Alien** paths as design goals. Functional overlap is welcome unless real bugs/incompatibilities arise. Actual artifact checks, progression balance and releases remain under research. No mods are installed yet.
 
 ## Provisional development baseline
 
@@ -19,6 +19,8 @@ These choices reuse known tooling from the sister project for an efficient start
 - [AGENTS.md](AGENTS.md): safety, collaboration, and change authority for agents and developers.
 - [docs/DESIGN.md](docs/DESIGN.md): intent, boundaries, and unresolved gameplay choices.
 - [docs/DECISIONS.md](docs/DECISIONS.md): decision ledger, including provisional assumptions.
+- [Cybernetic progression goals](manifest/progression-goals.json): Cyborg / Meatbag / Alien path goals and shared TMM Progression source gate.
+- [Thematic dimensions research](docs/research/THEMATIC-DIMENSIONS-2026-11-20.md): Ad Astra custom planet configuration and 20 other dimension/procedural candidates.
 - [docs/WORKFLOW.md](docs/WORKFLOW.md): branches, PRs, ownership, and integration.
 - [docs/BRANCH-LIFECYCLE.md](docs/BRANCH-LIFECYCLE.md): review and retirement, single-writer workstreams, branch budget.
 - [docs/INTEGRATION-SOURCES.md](docs/INTEGRATION-SOURCES.md): immutable donor commits and path ownership.

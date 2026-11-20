@@ -22,6 +22,12 @@ Use `python3 scripts/validate_repo.py` locally and the GitHub `Quick checks` job
 
 ## Owner target flags (2026-11-20)
 
-All 102 previously surveyed tech and TMM food/QoL entries now carry `targeted_inclusion:true`. Their `selection_state` is `targeted`, `targeted_alternative` for competing Ender IO implementations, or `conditional_target` where an actual 1.21.1 compatible release/artifact is missing or suspect. These are intended inclusions **not** packwiz pins; `packwiz_installed:false` stays true. Core mod Draconic Evolution and independent Thermal-inspired FACTAS are explicit targets.
+All 102 previously surveyed tech and TMM food/QoL entries now carry `targeted_inclusion:true`. Their `selection_state` is `targeted`, `targeted` for Ender IO **and dependent Evolution addon**, or `conditional_target` where an actual 1.21.1 compatible release/artifact is missing or suspect. These are intended inclusions **not** packwiz pins; `packwiz_installed:false` stays true. Core mod Draconic Evolution and independent Thermal-inspired FACTAS are explicit targets.
 
-The 12 newly researched robot/cybernetic mob entries have `targeted_inclusion:false` and are not approved by the user's request for an initial survey. Do not equate a reported version with a downloaded hash-pinned mod.
+One of the 12 previously researched robot mods (**Cybernetics**) is now owner-targeted, leaving 11 unselected mob survey entries. Five cybernetic targets and one deferred shared TMM Progression engine are now also in the register. Do not equate a reported version with a downloaded hash-pinned mod.
+
+### Dimension survey / Progression goals
+
+20 dimension and procedural-space research entries have `selection_state: "unselected_dimension_survey"`, not an owner inclusion target, except preexisting Ad Astra. Their published version strings are source discovery only, not tested or pinned.
+
+The new `manifest/progression-goals.json` locks a first-party **reuse target** for the TMM `compat/progression` engine and three **future** data-defined TMT paths (Cyborg, Meatbag, Alien). These are not runnable path data JSONs, skill trees, shared repo imports, grants or completed gameplay. Frozen TMM inspect SHA is provenance; import donor SHA must be reconfirmed after upstream core completion and owner QA contract.

@@ -30,6 +30,8 @@ jobs:
         run: python3 scripts/validate_repo.py
       - name: Integration Preflight — local schema/source ownership, read-only
         run: python3 scripts/validate_integration.py
+      - name: Progression path goals — research contract only
+        run: python3 scripts/validate_progression_goals.py
       - name: Repository and preflight unit tests
         run: python3 -m unittest discover -s tests -v
 

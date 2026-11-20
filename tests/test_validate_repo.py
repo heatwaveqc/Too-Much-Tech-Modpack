@@ -89,6 +89,24 @@ class BootstrapValidationTests(unittest.TestCase):
         }])
         self.assertEqual(validate(self.root), [])
 
+    def test_dimension_survey_stays_unselected(self):
+        self.write_mods([{
+            "id": "machina", "name": "MACHINA", "status": "researching",
+            "project_url": "https://modrinth.com/mod/machina-mod",
+            "targeted_inclusion": False, "selection_state": "unselected_dimension_survey",
+            "packwiz_installed": False
+        }])
+        self.assertEqual(validate(self.root), [])
+
+    def test_dimension_survey_rejects_selected_flag(self):
+        self.write_mods([{
+            "id": "machina", "name": "MACHINA", "status": "researching",
+            "project_url": "https://modrinth.com/mod/machina-mod",
+            "targeted_inclusion": True, "selection_state": "unselected_dimension_survey",
+            "packwiz_installed": False
+        }])
+        self.assertTrue(any("targeted entry needs" in e for e in validate(self.root)))
+
     def test_rejects_unsafe_index_path(self):
         text = (self.root / "pack.toml").read_text(encoding="utf-8")
         (self.root / "pack.toml").write_text(
