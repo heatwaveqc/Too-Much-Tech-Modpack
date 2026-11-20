@@ -2,7 +2,7 @@
 
 **Status: repository bootstrap with researched candidates; no installed mods or game-tested build.**
 
-Too Much Tech is a technology-focused Minecraft modpack project and a **separate sister project** to [Too Much Magic](https://github.com/heatwaveqc/Too-Much-Magic-Modpack). Its intended themes are engineering, machines, power, automation, logistics, industrial systems, and meaningful technical progression. Its initial owner-selected tech backbone is **Oritech, Just Dire Things, Mekanism and Draconic Evolution**. All 102 original technology + TMM food/QoL entries are targeted for future inclusion, including FACTAS. Five additional cybernetic targets (Cybernetics, Synthetics, one Matter Overdrive port, NeoSync, Create: Chromeware) and the deferred **shared TMM Progression engine** are targeted too, with **Cyborg, Meatbag, Alien** paths as design goals. Also targeted: Ad Astra: Planets, Stargate Journey, RFTools Dimensions, Infinite Dimensions, Deep Space, and isolated MACHINA/Create: Universe experiments. Functional overlap is welcome unless real bugs/incompatibilities arise. Actual artifact checks, progression balance and releases remain under research. No mods are installed yet.
+Too Much Tech is a technology-focused Minecraft modpack project and a **separate sister project** to [Too Much Magic](https://github.com/heatwaveqc/Too-Much-Magic-Modpack). Its intended themes are engineering, machines, power, automation, logistics, industrial systems, and meaningful technical progression. Its initial owner-selected tech backbone is **Oritech, Just Dire Things, Mekanism and Draconic Evolution**. All 102 original technology + TMM food/QoL entries are targeted for future inclusion, including FACTAS. Five additional cybernetic targets (Cybernetics, Synthetics, one Matter Overdrive port, NeoSync, Create: Chromeware) and the deferred **shared TMM Progression engine** are targeted too, with **Cyborg, Meatbag, Alien** paths as design goals. Also targeted: Ad Astra: Planets, Stargate Journey, RFTools Dimensions, Infinite Dimensions, Deep Space, and isolated MACHINA/Create: Universe experiments. Functional overlap is welcome unless real bugs/incompatibilities arise. Broad biotech is now targeted (except NEEPMeat's incompatible 1.20.1 Fabric build, which remains a conditional future target). Actual artifact checks, progression balance and releases remain under research. No mods are installed yet.
 
 ## Provisional development baseline
 
@@ -21,7 +21,8 @@ These choices reuse known tooling from the sister project for an efficient start
 - [docs/DECISIONS.md](docs/DECISIONS.md): decision ledger, including provisional assumptions.
 - [Cybernetic progression goals](manifest/progression-goals.json): Cyborg / Meatbag / Alien path goals and shared TMM Progression source gate.
 - [Thematic dimensions research](docs/research/THEMATIC-DIMENSIONS-2026-11-20.md): Ad Astra custom planet configuration and 20 other dimension/procedural candidates.
-- [Biotechnology ecosystem survey](docs/research/BIOTECH-2026-11-20.md): 24 research-only genetics, living factory, pathology and alien biology candidates.
+- [Biotechnology ecosystem survey](docs/research/BIOTECH-2026-11-20.md): 24 now-targeted genetics, living factory, pathology and alien biology candidates, plus conditionally held NEEPMeat.
+- [Tech-first magitech assessment](docs/research/TECH-FIRST-MAGITECH-2026-11-20.md): optional Botania and Embers recommendations (not yet approved).
 - [docs/WORKFLOW.md](docs/WORKFLOW.md): branches, PRs, ownership, and integration.
 - [docs/BRANCH-LIFECYCLE.md](docs/BRANCH-LIFECYCLE.md): review and retirement, single-writer workstreams, branch budget.
 - [docs/INTEGRATION-SOURCES.md](docs/INTEGRATION-SOURCES.md): immutable donor commits and path ownership.

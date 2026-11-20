@@ -33,3 +33,9 @@ Five additional selected systems: Cybernetics, Synthetics, Matter Overdrive (Uno
 [Dimension survey](research/THEMATIC-DIMENSIONS-2026-11-20.md) distinguishes Ad Astra's data-defined custom destinations and seeded terrain from runtime-created new dimensions. Its extra 20 research-only entries are not installed or preapproved. Even confirmed version support does not prove that two dimensions can coexist safely or preserve existing worlds.
 
 [Shared Progression target](../manifest/progression-goals.json) records a future reviewed source reuse only; the TMM core remains in development and should not be copied or built until frozen and authorized.
+
+## Broad biotechnology target and magitech review — 2026-11-20
+
+All 24 compatible-version biotechnology candidates were promoted to owner targets, but there are hard technical gates for two **alternative Biomancy implementation JARs** and the held 1.20.1 Fabric-only **NEEPMeat**. Do not exclude other genetics mods solely for functional overlap. Test disease propagation, entity genome serialization, cybernetic and synthetic body transfers, stable saves, metabolism/food handling and automation integration. Beta/alpha mods go through isolated QA first when risks warrant.
+
+Botania Revived and the Embers 1.21.1 NeoForge port options are recommended research-only, not owner-selected. The **two Embers ports** may share original Embers mod IDs/content; choose one actual JAR implementation after verification. Botania Revived has its own recipe/energy automation and potential compatibility considerations with Productive Bees and claims automation; no cross-mod magic gate should be imposed on TMT's mainstream machine progression without explicit decision. [Magitech assessment](research/TECH-FIRST-MAGITECH-2026-11-20.md).

@@ -125,6 +125,24 @@ class BootstrapValidationTests(unittest.TestCase):
         }])
         self.assertTrue(any("targeted entry needs" in e for e in validate(self.root)))
 
+    def test_unselected_magitech_is_research_only(self):
+        self.write_mods([{
+            "id": "botania-revived", "name": "Botania Revived", "status": "researching",
+            "project_url": "https://www.curseforge.com/minecraft/mc-mods/botania-revived",
+            "targeted_inclusion": False, "selection_state": "unselected_magitech_survey",
+            "packwiz_installed": False
+        }])
+        self.assertEqual(validate(self.root), [])
+
+    def test_held_biotech_conditional_target_allowed(self):
+        self.write_mods([{
+            "id": "neepmeat", "name": "NEEPMeat", "status": "held",
+            "project_url": "https://modrinth.com/mod/neepmeat",
+            "targeted_inclusion": True, "selection_state": "conditional_target",
+            "packwiz_installed": False
+        }])
+        self.assertEqual(validate(self.root), [])
+
     def test_rejects_unsafe_index_path(self):
         text = (self.root / "pack.toml").read_text(encoding="utf-8")
         (self.root / "pack.toml").write_text(
