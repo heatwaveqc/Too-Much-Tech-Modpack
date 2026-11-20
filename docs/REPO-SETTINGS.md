@@ -15,7 +15,11 @@ In GitHub **Settings → Rules → Rulesets** (or branch-protection rules):
 ## Workflow and security review
 
 - [ ] Confirm GitHub Actions is enabled for the repository and default `GITHUB_TOKEN` permissions are minimal.
-- [ ] Confirm required checks run on PRs targeting each permanent branch. Current `quick-checks.yml` has read-only token permissions.
+- [ ] Confirm required checks run on PRs targeting each permanent branch. Current `quick-checks.yml` has read-only token permissions and checks both packwiz and integration-source/evidence schemas.
+- [ ] Review `.github/CODEOWNERS`; remember it is advisory until an enforced ruleset requires review.
+- [ ] Verify `branch-lifecycle-report.yml` only has read permissions. It runs a scheduled branch inventory and on-PR collision checks; it **never** deletes branches or builds Minecraft.
+- [ ] Confirm GitHub Actions schedule runs on the default branch, not on a moving external feature branch.
+- [ ] If adding a full-build command console later, implement a fresh TMT-scoped owner-ID, exact-SHA, nonce/receipt, replay, read-only check and audit contract. Do **not** reuse TMM's issue IDs or /tmm commands.
 - [ ] Keep full modded assembly/boot/Prism publication workflows **absent** until an explicitly authorized, manual opt-in workflow exists.
 - [ ] Review whether to enable automatic deletion of source branches after meaningful PR merges; preserve dependent PRs and source provenance first.
 - [ ] Review repository visibility and secrets. The project is currently **public**; no secrets should be committed.
@@ -26,4 +30,4 @@ In GitHub **Settings → Rules → Rulesets** (or branch-protection rules):
 - `main` and `test/full-integration` both existed and passed `Verify bootstrap / metadata` on 2026-11-20.
 - [Main run](https://github.com/heatwaveqc/Too-Much-Tech-Modpack/actions/runs/44813083684).
 - [Integration run](https://github.com/heatwaveqc/Too-Much-Tech-Modpack/actions/runs/44813094904).
-- No branch protection, required-check enforcement, review rules, or licensing decisions are claimed as configured by this document.
+- No branch protection, required-check enforcement, review rules, or licensing decisions are claimed as configured by this document. The report workflow is read-only, not a retirement executor.

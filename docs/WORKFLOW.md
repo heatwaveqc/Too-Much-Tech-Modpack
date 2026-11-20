@@ -1,40 +1,13 @@
-# Workstream, branch, and integration workflow
+# Too Much Tech — workstream and integration workflow
 
-## Branch purposes
+Canonical procedure: [branch lifecycle](BRANCH-LIFECYCLE.md), [source locks](INTEGRATION-SOURCES.md), [agent contract](../AGENTS.md) and [build channels](BUILD-CHANNELS-AND-TESTING.md). These adapted TMM standards supersede the earlier short bootstrap workflow.
 
-- **`main`**: bootstrap, project policies, reusable tooling, accepted documentation and controlled integration promotion. It is not automatically a stable game release.
-- **`test/full-integration`**: unified mod roster, compatibility patches, configs and experimental source integration. It is not automatically server-tested or playable.
-- **`feature/<scope>` / `research/<scope>` / `fix/<scope>`**: temporary, narrowly owned, reviewable workstreams. No other permanent branches without owner approval.
+- **main** is accepted policy/bootstrap, not stable. **test/full-integration** is the single changing source integration branch, not a boot-tested pack. Temporary research/feature/fix/policy branches use scoped PRs.
+- Discover current PRs/issues/branches/source pins before starting. Reuse prior chats' workstreams, one writer per shared branch/path. Draft/ready PR within 24 hours. Each handoff states owner, scope, exact SHA, owned files, dependencies, checks, blockers, next step.
+- Feature branches own isolated source/data; a designated integration writer owns shared packwiz, manifests, cross-mod configs/quest runtime, collisions and frozen source promotions. New shared runtime behavior belongs in the designated engine module, not hidden feature-specific executable code. Add subsystem branches only when approved.
+- Approved coherent source PRs may be merged without per-merge owner approval after current-head quick CI, provenance and collisions review. **Never conflate merge with server or gameplay PASS.** New gameplay decisions/major roster selections need owner direction.
+- Mod intake progresses proposed → researching → approved → pinned. `pinned` requires exact indexed packwiz file, still not runtime evidence. Later test levels are separately evidenced. Track features in `manifest/feature-checklist.json` and ready live tests in `manifest/live-test-inclusion.json`.
+- Do not run source assembly, server smoke, Prism build, release, or destructive cleanup merely because a PR passed. These use explicit owner authorization per run/batch.
+- Finish by reconciling integration source-locks, QA obligations and branch retention. Budget <=20 normal, 21–30 review, >30 maintenance, advisory only. Daily read-only inventory/collision report is permitted.
 
-Start work from an up-to-date appropriate base. Feature PRs normally target `test/full-integration`, while policy/bootstrap PRs target `main`. Document cross-branch promotion explicitly. Avoid cherry-picking unowned changes or copying a stale manifest over fresh integration.
-
-## Before implementation
-
-1. Read `AGENTS.md`, applicable decisions, active issues/PRs/branches, current packwiz pins and existing implementation.
-2. Reuse or take over the existing workstream with a clear handoff. One designated writer owns each shared file set.
-3. Record the owner-approved scope and concrete acceptance criteria. Open issues for ideas, not speculative runtime commits.
-4. If a mod is implicated, inspect compatible releases, exact dependency closure, distribution terms and native config behavior before introducing custom patches.
-
-## Pull request lifecycle
-
-Open a draft PR promptly after a meaningful first commit (within 24 hours), and keep the same PR across chat/session interruptions. Its description must state:
-
-- Workstream/issue/decision link and responsible writer.
-- Base/head branch and exact checkpoint SHA; file and config ownership.
-- Changes, known limitations, dependencies and collisions with other workstreams.
-- Quick CI evidence and exact tests not run.
-- Next action and A/B/C in-game QA needed for acceptance.
-
-Promote a coherent reviewed source slice when it is safe and already within approved scope; no separate full modded boot is required to merge source-only work. The integration owner reconciles shared manifests and packwiz hashes on current HEAD. Missing pins, incompatible mods, or unexplained changes are blockers, not automatic exclusions. Preserve commit provenance, update dependent PRs, and retire temporary branches deliberately without sweeping deletions.
-
-## Mod intake phases
-
-`proposed` → `researching` → `approved` → `pinned` → tested by independently recorded QA levels.
-
-`held` and `excluded` are explicit states. An `approved` record is not necessarily present in the pack index. A `pinned` record must name its indexed packwiz metadata file and exact upstream version. The integration writer updates `index.toml` and `pack.toml` hashes using packwiz or an equivalent deterministic source-validated procedure.
-
-## Routine automation
-
-CI may validate TOML, JSON, packwiz hashes, manifest entries and isolated source tests. Repository metrics and branch reports may run read-only. No scheduled full builds, no silent mod updates and no unattended destructive branch cleanup. Full assembly, game boots, Prism ZIPs and stable releases are opt-in per [QA.md](QA.md).
-
-GitHub branch protection and required status checks must be configured by an administrator in GitHub; these markdown policies **do not** themselves enable protection.
+Refer to [TMM parity mapping](SISTER-PROJECT-PARITY.md) for adopted versus deliberately excluded procedures.

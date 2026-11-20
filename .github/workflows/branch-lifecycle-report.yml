@@ -1,0 +1,44 @@
+name: Branch lifecycle advisory
+
+on:
+  schedule:
+    # Midnight-ish America/Phoenix (MST = UTC-7), read-only
+    - cron: '20 7 * * *'
+  workflow_dispatch:
+  pull_request:
+    types: [opened, reopened, synchronize, ready_for_review]
+    branches: [main, test/full-integration]
+
+permissions:
+  contents: read
+  pull-requests: read
+
+jobs:
+  inventory:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Read-only branch and frozen-source inventory
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python3 scripts/branch_lifecycle_report.py inventory
+  collisions:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Read-only PR same-base changed-path overlap
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        run: python3 scripts/branch_lifecycle_report.py collision --pr "$PR_NUMBER"
+
+# This workflow has NO GitHub API write permissions.
+# Not a nightly integration manager, build runner or branch-deletion system.
