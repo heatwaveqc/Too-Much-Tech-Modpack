@@ -23,6 +23,7 @@ These choices reuse known tooling from the sister project for an efficient start
 - [docs/QA.md](docs/QA.md): source checks versus authorized Minecraft testing.
 - [docs/COMPATIBILITY.md](docs/COMPATIBILITY.md): candidate/installed mod research protocol.
 - [docs/ROADMAP.md](docs/ROADMAP.md): milestones without fictional completion claims.
+- [docs/REPO-SETTINGS.md](docs/REPO-SETTINGS.md): manual GitHub administration checklist.
 - [manifest/mods.json](manifest/mods.json): initially empty mod-intake register.
 - [pack.toml](pack.toml), [index.toml](index.toml): minimal empty packwiz bootstrap.
 - [scripts/validate_repo.py](scripts/validate_repo.py): local and CI metadata validation.
@@ -42,6 +43,6 @@ These checks do **not** assemble the modpack, launch a server/client, generate a
 
 ## Next decisions
 
-Before adding actual tech mods, record the intended power systems, storage/logistics philosophy, automation style, desired progression gates, and whether any overlaps with Too Much Magic should be shared as maintained components. Track proposed choices in [docs/DESIGN.md](docs/DESIGN.md) and concrete mods in the manifest.
+Before adding actual tech mods, record the intended power systems, storage/logistics philosophy, automation style, desired progression gates, and whether any overlaps with Too Much Magic should be shared as maintained components. Track proposed choices in [docs/DESIGN.md](docs/DESIGN.md) and concrete mods in the manifest. The first decision workstream is [Issue #1](https://github.com/heatwaveqc/Too-Much-Tech-Modpack/issues/1).
 
 **No stable, alpha, or playable build exists at bootstrap.**
