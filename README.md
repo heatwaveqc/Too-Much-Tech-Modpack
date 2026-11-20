@@ -24,6 +24,7 @@ These choices reuse known tooling from the sister project for an efficient start
 - [Biotechnology ecosystem survey](docs/research/BIOTECH-2026-11-20.md): 24 now-targeted genetics, living factory, pathology and alien biology candidates, plus conditionally held NEEPMeat.
 - [Tech-first magitech assessment](docs/research/TECH-FIRST-MAGITECH-2026-11-20.md): now-targeted optional Botania Revived and Embers Re-Ignited.
 - [Bosses and encounter survey](docs/research/BOSS-AND-ENCOUNTERS-2026-11-20.md): 18 additional 1.21.1 NeoForge boss, monster, and encounter framework candidates.
+- [Tech-heavy boss survey](docs/research/TECH-HEAVY-BOSSES-2026-11-20.md): mechanical/robot/alien boss correction — ten new compatible-version candidates and four version-blocked watchlist entries.
 - [docs/WORKFLOW.md](docs/WORKFLOW.md): branches, PRs, ownership, and integration.
 - [docs/BRANCH-LIFECYCLE.md](docs/BRANCH-LIFECYCLE.md): review and retirement, single-writer workstreams, branch budget.
 - [docs/INTEGRATION-SOURCES.md](docs/INTEGRATION-SOURCES.md): immutable donor commits and path ownership.

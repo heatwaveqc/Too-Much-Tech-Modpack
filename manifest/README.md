@@ -53,3 +53,7 @@ The user asked whether TMT should include Embers and Botania. Three provider rec
 **Botania Revived and Embers Re-Ignited** are now owner-targeted, with `selection_state: targeted` and `packwiz_installed:false`. Another **Embers** implementation, `embers-reborn`, remains `unselected_magitech_survey` and a potential implementation fallback, **not** another addon or co-install target. Approval to include a technology *family* is not approval to install two JARs with the same underlying mod identity.
 
 The new 18 boss/mob/encounter projects are **research-only** with `selection_state: unselected_boss_survey`. They include 1.21.1 NeoForge release listings for signature boss packs, monsters, full adventure dimensions, wave portals, datapack boss tools and boss-index UIs. No boss mods have been installed or individually owner selected. See [boss survey](../docs/research/BOSS-AND-ENCOUNTERS-2026-11-20.md).
+
+## Tech-heavy boss survey correction — 2026-11-20
+
+The owner asked for more sci-fi/mechanical bosses than the first fantasy-skewed survey. **14 further research-only** entries were added with `category: "tech-bosses"` and `selection_state: "unselected_boss_survey"`. Ten have provider-listed NeoForge 1.21.1 builds, and four have `status: "held"` because they only have older Minecraft/Forge builds. They are not owner-selected, pinned or installed. Existing Mechafauna remains in the older robot-mob research section rather than being duplicated. [Focused tech boss report](../docs/research/TECH-HEAVY-BOSSES-2026-11-20.md).

@@ -1,6 +1,6 @@
 # Bosses, dangerous creatures and repeatable encounters — TMT first survey
 
-**Surveyed 2026-11-20.** Platform **Minecraft 1.21.1 / NeoForge 21.1.265**, subject to normal version/dependency review. The owner asked whether the tech pack still needs bosses; this research records **18 additional candidates** without interpreting a question as explicit selection. All 18 are `unselected_boss_survey`, `targeted_inclusion:false`, `packwiz_installed:false`.
+> **Follow-up:** The owner requested a **tech-heavy boss correction**. An additional [focused sci-fi/industrial boss survey](TECH-HEAVY-BOSSES-2026-11-20.md) records 10 provider-listed 1.21.1 NeoForge projects plus four version-blocked alternatives; the earlier fantasy-heavy list below remains historical context, not the recommended TMT backbone. See decision TMT-0029.\n\n**Surveyed 2026-11-20.** Platform **Minecraft 1.21.1 / NeoForge 21.1.265**, subject to normal version/dependency review. The owner asked whether the tech pack still needs bosses; this research records **18 additional candidates** without interpreting a question as explicit selection. All 18 are `unselected_boss_survey`, `targeted_inclusion:false`, `packwiz_installed:false`.
 
 ## Why bosses belong in this pack
 
