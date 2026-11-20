@@ -31,3 +31,7 @@ One of the 12 previously researched robot mods (**Cybernetics**) is now owner-ta
 20 dimension and procedural-space research entries have `selection_state: "unselected_dimension_survey"`, not an owner inclusion target, except preexisting Ad Astra. Their published version strings are source discovery only, not tested or pinned.
 
 The new `manifest/progression-goals.json` locks a first-party **reuse target** for the TMM `compat/progression` engine and three **future** data-defined TMT paths (Cyborg, Meatbag, Alien). These are not runnable path data JSONs, skill trees, shared repo imports, grants or completed gameplay. Frozen TMM inspect SHA is provenance; import donor SHA must be reconfirmed after upstream core completion and owner QA contract.
+
+## Dimension inclusion goals — 2026-11-20
+
+The owner explicitly promoted seven dimensional entries from `unselected_dimension_survey` to `targeted`: **five primary** (`ad-astra-planets`, `stargate-journey`, `rftools-dimensions`, `infinite-dimensions`, `deep-space-unofficial-port`) and **two isolated-experiment** (`machina-mod`, `create-universe`). The `goal_phase` marks implementation priority and QA isolation, **not** an installed/approved runtime artifact or proof that the claimed feature exists. Thirteen remaining new dimension candidates remain research-only. Existing `ad-astra` target is unchanged. All seven have `packwiz_installed:false` until separately reviewed exact pins.

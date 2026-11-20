@@ -8,7 +8,7 @@
     "java": 21,
     "loader_status": "provisional"
   },
-  "status_note": "Owner 2026-11-20: previous 102 surveyed tech/TMM carryover targets retained. Cybernetic technology targets added: Cybernetics, Synthetics, Matter Overdrive (Unofficial Port), NeoSync, Create: Chromeware. Overlap alone not a blocker; real crashes/data incompatibility are. Progression module separately targeted as first-party TMM source, with Cyborg/Meatbag/Alien paths goals pending upstream readiness. The new 20 dimensional items are RESEARCH-ONLY, NOT selected, except Ad Astra already in original 102 targets. No packwiz installs. TMT also targets the shared TMM Unified Progression engine (source only, deferred pending upstream readiness), to support future Cyborg, Meatbag, Alien paths.",
+  "status_note": "Owner 2026-11-20: previous 102 surveyed tech/TMM carryover targets retained. Cybernetic technology targets added: Cybernetics, Synthetics, Matter Overdrive (Unofficial Port), NeoSync, Create: Chromeware. Overlap alone not a blocker; real crashes/data incompatibility are. Progression module separately targeted as first-party TMM source, with Cyborg/Meatbag/Alien paths goals pending upstream readiness. The new 20 dimensional items are RESEARCH-ONLY, NOT selected, except Ad Astra already in original 102 targets. No packwiz installs. TMT also targets the shared TMM Unified Progression engine (source only, deferred pending upstream readiness), to support future Cyborg, Meatbag, Alien paths. On 2026-11-20 owner selected 5 primary dimension inclusion goals (Ad Astra: Planets, Stargate Journey, RFTools Dimensions, Infinite Dimensions, Deep Space) and 2 isolated experiment goals (MACHINA, Create: Universe). All seven are targets, none installed or verified in a full runtime.",
   "donor": {
     "repository": "heatwaveqc/Too-Much-Magic-Modpack",
     "branch": "test/full-integration",
@@ -1005,14 +1005,14 @@
     {
       "id": "ad-astra-planets",
       "name": "Ad Astra: Planets",
-      "status": "researching",
-      "targeted_inclusion": false,
-      "selection_state": "unselected_dimension_survey",
+      "status": "approved",
+      "targeted_inclusion": true,
+      "selection_state": "targeted",
       "category": "tech-dimensions",
       "project_url": "https://www.curseforge.com/minecraft/mc-mods/ad-astra-planets",
       "survey_version": "1.0.1",
       "release_channel": "release",
-      "priority": "high",
+      "priority": "owner_primary_dimension_goal",
       "survey_date": "2026-11-20",
       "notes": "Adds Mercury, outer planets/moons, tier 5–10 rockets, biome/worldgen JSON, solar maps, environmental protection; 1.21.1 NeoForge, requires Ad Astra 1.16.26+, GeckoLib, libraries. Data-first strong custom planet blueprint.",
       "dimension_role": "solar-system-expansion",
@@ -1020,7 +1020,11 @@
       "compatibility": "provider-listed 1.21.1 NeoForge or datadriven concept; no combined runtime validation",
       "depends_on": [
         "ad-astra"
-      ]
+      ],
+      "selection_source": "owner direction 2026-11-20: agree with five primary dimension goals and MACHINA/Create: Universe isolated evaluation",
+      "goal_phase": "primary",
+      "goal_purpose": "Curated solar system, custom planet definitions and seeded terrain",
+      "inclusion_notes": "Goal selection only; requires independently verified Minecraft 1.21.1 NeoForge file, dependencies, licensing, exact provider hashes, cross-mod/world-save/return safety review; no JAR pinned, no assembly authorized."
     },
     {
       "id": "ad-astra-planetsplus",
@@ -1133,14 +1137,14 @@
     {
       "id": "create-universe",
       "name": "Create: Universe",
-      "status": "researching",
-      "targeted_inclusion": false,
-      "selection_state": "unselected_dimension_survey",
+      "status": "approved",
+      "targeted_inclusion": true,
+      "selection_state": "targeted",
       "category": "tech-dimensions",
       "project_url": "https://www.curseforge.com/minecraft/mc-mods/create-universe",
       "survey_version": "2.1",
       "release_channel": "release",
-      "priority": "high",
+      "priority": "owner_experimental_goal",
       "survey_date": "2026-11-20",
       "notes": "Claims seamless transitions and procedural stars/planets/mobs/worldgen; dependencies Create, Sable, Create Aeronautics, Create Propulsion Simulated, Create New Age, Gravity Control, Cloth Config. Very large compatibility/physics/performance surface; isolated smoke essential.",
       "dimension_role": "seamless-fully-procedural-cosmos",
@@ -1148,24 +1152,33 @@
       "compatibility": "provider-listed 1.21.1 NeoForge or datadriven concept; no combined runtime validation",
       "depends_on": [
         "create"
-      ]
+      ],
+      "selection_source": "owner direction 2026-11-20: agree with five primary dimension goals and MACHINA/Create: Universe isolated evaluation",
+      "goal_phase": "isolated-experiment",
+      "goal_purpose": "Investigate procedural cosmos and seamless spacecraft transitions; isolate complex physics/dependencies",
+      "inclusion_notes": "Goal selection only; requires independently verified Minecraft 1.21.1 NeoForge file, dependencies, licensing, exact provider hashes, cross-mod/world-save/return safety review; no JAR pinned, no assembly authorized.",
+      "experiment_gate": "Evaluate separately in disposable worlds first. Verify actual claimed procedural capability, supported loader/versions, dependencies, multiplayer save/restart persistence and resource/TPS costs prior to combined-pack inclusion."
     },
     {
       "id": "deep-space-unofficial-port",
       "name": "Deep Space (Unofficial Port)",
-      "status": "researching",
-      "targeted_inclusion": false,
-      "selection_state": "unselected_dimension_survey",
+      "status": "approved",
+      "targeted_inclusion": true,
+      "selection_state": "targeted",
       "category": "tech-dimensions",
       "project_url": "https://www.curseforge.com/minecraft/mc-mods/deep-space-unofficial-port",
       "survey_version": "1.0.1",
       "release_channel": "release",
-      "priority": "high",
+      "priority": "owner_primary_dimension_goal",
       "survey_date": "2026-11-20",
       "notes": "Planets, ringworlds, Hyper Relays, Sable ships, galaxy map. Infinite Dimensions optional strongly preferred for procedural star systems. Required Veil, Sable, Sable Schematic API, GeckoLib.",
       "dimension_role": "galaxy-ringworlds-and-flyable-ships",
       "packwiz_installed": false,
-      "compatibility": "provider-listed 1.21.1 NeoForge or datadriven concept; no combined runtime validation"
+      "compatibility": "provider-listed 1.21.1 NeoForge or datadriven concept; no combined runtime validation",
+      "selection_source": "owner direction 2026-11-20: agree with five primary dimension goals and MACHINA/Create: Universe isolated evaluation",
+      "goal_phase": "primary",
+      "goal_purpose": "Galaxies, ringworlds, spacecraft and optional procedural star systems",
+      "inclusion_notes": "Goal selection only; requires independently verified Minecraft 1.21.1 NeoForge file, dependencies, licensing, exact provider hashes, cross-mod/world-save/return safety review; no JAR pinned, no assembly authorized."
     },
     {
       "id": "dimension-expansion",
@@ -1204,36 +1217,45 @@
     {
       "id": "infinite-dimensions",
       "name": "Infinite Dimensions",
-      "status": "researching",
-      "targeted_inclusion": false,
-      "selection_state": "unselected_dimension_survey",
+      "status": "approved",
+      "targeted_inclusion": true,
+      "selection_state": "targeted",
       "category": "tech-dimensions",
       "project_url": "https://www.curseforge.com/minecraft/mc-mods/infinite-dimensions",
       "survey_version": "2.7.3+1.21.1",
       "release_channel": "release",
-      "priority": "high",
+      "priority": "owner_primary_dimension_goal",
       "survey_date": "2026-11-20",
       "notes": "Runtime creation of billions of quirky procedural dimensions from book + quill and portals; 1.21.1 NeoForge. Works as optional random-dimension engine for Deep Space; persistent save/runtime registration QA high.",
       "dimension_role": "runtime-random-dimensional-registry",
       "packwiz_installed": false,
-      "compatibility": "provider-listed 1.21.1 NeoForge or datadriven concept; no combined runtime validation"
+      "compatibility": "provider-listed 1.21.1 NeoForge or datadriven concept; no combined runtime validation",
+      "selection_source": "owner direction 2026-11-20: agree with five primary dimension goals and MACHINA/Create: Universe isolated evaluation",
+      "goal_phase": "primary",
+      "goal_purpose": "Runtime procedural destination generation with save persistence",
+      "inclusion_notes": "Goal selection only; requires independently verified Minecraft 1.21.1 NeoForge file, dependencies, licensing, exact provider hashes, cross-mod/world-save/return safety review; no JAR pinned, no assembly authorized."
     },
     {
       "id": "machina-mod",
       "name": "MACHINA",
-      "status": "researching",
-      "targeted_inclusion": false,
-      "selection_state": "unselected_dimension_survey",
+      "status": "approved",
+      "targeted_inclusion": true,
+      "selection_state": "targeted",
       "category": "tech-dimensions",
       "project_url": "https://modrinth.com/mod/machina-mod",
       "survey_version": "exact-file-pending",
       "release_channel": "release-listing",
-      "priority": "high",
+      "priority": "owner_experimental_goal",
       "survey_date": "2026-11-20",
       "notes": "Claims infinite physically accurate explorable solar systems, unique biome planets, factories and ships. Relatively small/new project: verify exact version, real worldgen maturity, safe server persistence.",
       "dimension_role": "infinite-procedural-planets-and-tech",
       "packwiz_installed": false,
-      "compatibility": "provider-listed 1.21.1 NeoForge or datadriven concept; no combined runtime validation"
+      "compatibility": "provider-listed 1.21.1 NeoForge or datadriven concept; no combined runtime validation",
+      "selection_source": "owner direction 2026-11-20: agree with five primary dimension goals and MACHINA/Create: Universe isolated evaluation",
+      "goal_phase": "isolated-experiment",
+      "goal_purpose": "Investigate claimed infinite procedural planets; verify genuine content and stable multiplayer persistence",
+      "inclusion_notes": "Goal selection only; requires independently verified Minecraft 1.21.1 NeoForge file, dependencies, licensing, exact provider hashes, cross-mod/world-save/return safety review; no JAR pinned, no assembly authorized.",
+      "experiment_gate": "Evaluate separately in disposable worlds first. Verify actual claimed procedural capability, supported loader/versions, dependencies, multiplayer save/restart persistence and resource/TPS costs prior to combined-pack inclusion."
     },
     {
       "id": "modded-gateways",
@@ -1258,19 +1280,23 @@
     {
       "id": "rftools-dimensions",
       "name": "RFTools Dimensions",
-      "status": "researching",
-      "targeted_inclusion": false,
-      "selection_state": "unselected_dimension_survey",
+      "status": "approved",
+      "targeted_inclusion": true,
+      "selection_state": "targeted",
       "category": "tech-dimensions",
       "project_url": "https://www.curseforge.com/minecraft/mc-mods/rftools-dimensions",
       "survey_version": "1.21-12.0.4",
       "release_channel": "beta",
-      "priority": "high",
+      "priority": "owner_primary_dimension_goal",
       "survey_date": "2026-11-20",
       "notes": "Player-built dimension generation via dimlets and dimension builder; power consumption creates a real technology-driven dimension progression. Needs RFTools Base + McJtyLib/version chain.",
       "dimension_role": "player-constructed-powered-dimensions",
       "packwiz_installed": false,
-      "compatibility": "provider-listed 1.21.1 NeoForge or datadriven concept; no combined runtime validation"
+      "compatibility": "provider-listed 1.21.1 NeoForge or datadriven concept; no combined runtime validation",
+      "selection_source": "owner direction 2026-11-20: agree with five primary dimension goals and MACHINA/Create: Universe isolated evaluation",
+      "goal_phase": "primary",
+      "goal_purpose": "Player-built powered, programmable dimensions",
+      "inclusion_notes": "Goal selection only; requires independently verified Minecraft 1.21.1 NeoForge file, dependencies, licensing, exact provider hashes, cross-mod/world-save/return safety review; no JAR pinned, no assembly authorized."
     },
     {
       "id": "space-dimensions-deep-space",
@@ -1326,14 +1352,14 @@
     {
       "id": "stargate-journey",
       "name": "Stargate Journey",
-      "status": "researching",
-      "targeted_inclusion": false,
-      "selection_state": "unselected_dimension_survey",
+      "status": "approved",
+      "targeted_inclusion": true,
+      "selection_state": "targeted",
       "category": "tech-dimensions",
       "project_url": "https://www.curseforge.com/minecraft/mc-mods/sgjourney",
       "survey_version": "0.6.54",
       "release_channel": "beta",
-      "priority": "high",
+      "priority": "owner_primary_dimension_goal",
       "survey_date": "2026-11-20",
       "notes": "Find and activate ancient Stargates; author explicitly supports Ad Astra destinations and CC:Tweaked integration. Unique alternative travel system; migration/network compatibility to verify.",
       "dimension_role": "gate-network-to-other-dimensions",
@@ -1341,7 +1367,11 @@
       "compatibility": "provider-listed 1.21.1 NeoForge or datadriven concept; no combined runtime validation",
       "depends_on": [
         "ad-astra"
-      ]
+      ],
+      "selection_source": "owner direction 2026-11-20: agree with five primary dimension goals and MACHINA/Create: Universe isolated evaluation",
+      "goal_phase": "primary",
+      "goal_purpose": "Parallel Stargate travel to Ad Astra and compatible dimensions",
+      "inclusion_notes": "Goal selection only; requires independently verified Minecraft 1.21.1 NeoForge file, dependencies, licensing, exact provider hashes, cross-mod/world-save/return safety review; no JAR pinned, no assembly authorized."
     },
     {
       "id": "automechs",
@@ -2733,6 +2763,6 @@
     "scope": "102 prior targets plus five cybernetic systems; 4 conditional holds persist",
     "version_artifacts_locked": false,
     "actual_packwiz_pins_added": 0,
-    "selection_summary": "104 currently targeted (including deferred shared Progression core), four conditional holds, 11 unselected robot mobs and 20 unselected dimension candidates; zero packwiz pins"
+    "selection_summary": "111 targeted (104 previous + 5 primary dimension additions + 2 experimental goals), four conditional holds, 11 unselected robot mobs and 13 remaining dimension survey items; zero packwiz pins"
   }
 }
