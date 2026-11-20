@@ -203,15 +203,14 @@
       "priority": "high",
       "review_date": "2026-11-20",
       "source_origin": "upstream-release-survey",
-      "notes": "Conduits and compact factories; beta only; do not mix competing Ender IO forks.",
+      "notes": "Official Ender IO base mod (team rewrite), 1.21.1 NeoForge 8.2.14-beta; Evolution is its separate dependent addon, NOT a competing implementation. Upstream recent beta notes include server crash fixes.",
       "packwiz_installed": false,
       "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested",
       "targeted_inclusion": true,
       "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
       "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
-      "selection_state": "targeted_alternative",
-      "selection_conflict_group": "enderio-implementation",
-      "selection_gate": "targeted alternative; resolve one Ender IO lineage before installation"
+      "selection_state": "targeted",
+      "selection_gate": "Base requirement for Ender IO: Evolution; confirm exact beta artifact/dependencies and runtime compatibility before packwiz pin."
     },
     {
       "id": "enderio-evolution",
@@ -221,18 +220,20 @@
       "category": "tech",
       "survey_version": "3.1.6",
       "release_channel": "release",
-      "priority": "alternative",
+      "priority": "high",
       "review_date": "2026-11-20",
       "source_origin": "upstream-release-survey",
-      "notes": "Distinct maintained alternative; study content parity and provenance, choose ONE Ender IO family.",
+      "notes": "Unofficial Ender IO addon expanding Endergy-like high-tier capacitors, alloys, grinding balls, conduits and parallel machines. NOT a standalone alternate/fork. 1.21.1 NeoForge 3.x requires Ender IO 8.2.0+; version 3.1.6 is compatible by stated version range with official 8.2.14-beta; live test still required. License All Rights Reserved.",
       "packwiz_installed": false,
       "compatibility": "1.21.1 NeoForge release metadata; full dependency/runtime compatibility NOT tested",
       "targeted_inclusion": true,
       "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
       "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
-      "selection_state": "targeted_alternative",
-      "selection_conflict_group": "enderio-implementation",
-      "selection_gate": "targeted alternative; resolve one Ender IO lineage before installation"
+      "selection_state": "targeted",
+      "selection_gate": "Depends on official Ender IO 8.2.0+; both targeted for co-installation after artifact, license and combined runtime verification.",
+      "depends_on": [
+        "ender-io"
+      ]
     },
     {
       "id": "extreme-reactors",
@@ -2270,6 +2271,6 @@
     "scope": "all 102 pre-existing technology and TMM food/QoL survey entries, including FACTAS and Draconic Evolution",
     "version_artifacts_locked": false,
     "actual_packwiz_pins_added": 0,
-    "selection_summary": "98 targets including Ender IO alternative entries, four conditional targets, 12 mob research-only candidates; no actual mod installation"
+    "selection_summary": "98 targets (Ender IO base + Evolution addon), four conditional targets, 12 mob research-only candidates; zero packwiz pins or installations"
   }
 }

@@ -18,7 +18,9 @@ This ledger separates confirmed owner direction, bootstrap technical assumptions
 | TMT-0012 | 2026-11-20 | Owner-directed / broad intent | TMM carryover | Port **most** food and QoL/performance conveniences from TMM after exact-version, dependency and non-magic-config review. All 56 researched TMM food/QoL entries are now targeted for future inclusion, subject to version/compatibility checks; no blanket approval for TMM-specific mechanics or old pins. |
 | TMT-0013 | 2026-11-20 | Research only | Additional tech candidates | Recorded release metadata for Create, Immersive Engineering, PneumaticCraft, AE2/RS, Powah, Extreme Reactors, Ender IO, Industrial Foregoing, Ad Astra and others. None added to packwiz. |
 
-| TMT-0014 | 2026-11-20 | Owner-directed | Target inclusion lock | Target all 102 previously surveyed technology and TMM food/QoL entries, explicitly including FACTAS and Draconic Evolution. This is an inclusion goal, not an installed/pinned artifact. Hold unavailable official Thermal modules and invalid version sources; choose one Ender IO lineage before install. |
+| TMT-0014 | 2026-11-20 | Owner-directed | Target inclusion lock | Target all 102 previously surveyed technology and TMM food/QoL entries, explicitly including FACTAS and Draconic Evolution. This is an inclusion goal, not an installed/pinned artifact. Hold unavailable official Thermal modules and invalid version sources; include official Ender IO base with dependent Ender IO: Evolution addon after compatible-version verification. |
 | TMT-0015 | 2026-11-20 | Research only | Cybernetic and mechanical mobs | Survey 12 robotic/cybernetic mob mods, including Cybernetics from Integrated Boogaloo. None is approved for installation yet. |
+
+| TMT-0016 | 2026-11-20 | Research correction | Ender IO architecture | Ender IO: Evolution is an **unofficial Ender IO addon**, not a competing base mod. The 1.21.1 NeoForge Evolution 3.x line depends on official Ender IO 8.2.0+; target both base 8.2.14-beta and addon 3.1.6, with artifact/version verification before installation. |
 
 See [DESIGN.md](DESIGN.md) for the specific choices awaiting discussion.
