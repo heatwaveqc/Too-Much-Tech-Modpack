@@ -39,3 +39,7 @@ The owner explicitly promoted seven dimensional entries from `unselected_dimensi
 ## Biotechnology survey — 2026-11-20
 
 The initial biotechnology exploration added **24 research-only candidate records**, all marked `targeted_inclusion: false` and `selection_state: unselected_biotech_survey`. They are **not** additions to the owner-targeted roster. Most have published Minecraft 1.21.1 NeoForge release metadata, but a provider-listed version is not a verified download, hash, loader dependency or combined runtime pass. The two independent Biomancy 1.21.1 port implementations are identified as a potential hard mod-ID/content conflict; select at most one implementation when planning a build. [Biotech report](../docs/research/BIOTECH-2026-11-20.md).
+
+### Version-blocked biotech: NEEPMeat
+
+NEEPMeat is a separate `status: held` + `selection_state: unselected_biotech_survey` research entry. The most recent verified official file is **Minecraft 1.20.1 Fabric** (`0.36.1-beta+1.20.1`), not TMT's **1.21.1 NeoForge**. This is not the same as a `conditional_target`: the owner has not selected the mod for installation, and no runtime-compatible file has been found. A 1.20.1 Connector build cannot solve the game-version mismatch. See [biotech survey](../docs/research/BIOTECH-2026-11-20.md).

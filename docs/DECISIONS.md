@@ -32,4 +32,6 @@ This ledger separates confirmed owner direction, bootstrap technical assumptions
 
 | TMT-0022 | 2026-11-20 | Research only | Biotechnology ecosystem | Survey 24 biotechnology, genetics, medical, living-machine, fermentation, and alien species projects for 1.21.1 NeoForge. Existing core/tech targets (including Industrial Foregoing, Productive Bees, Synthetics, Oritech) remain selected. **New biotech mods are not yet owner-targeted** by the exploratory question. Favor inclusive evaluation, but verify actual hard duplicate port IDs, player gene/state persistence, infection containment, entity simulation and supported release artifacts. |
 
+| TMT-0023 | 2026-11-20 | Research only / held | NEEPMeat | Promising biomechanical industrial mod, but latest verified release **0.36.1-beta+1.20.1** is **Fabric for MC 1.20.1**; no proven 1.21.1 NeoForge port. Do **not** assume Sinytra Connector bridges a Minecraft version mismatch. Keep visible as high-interest future biotechnology candidate, not a current installation target or reason to change TMT baseline. |
+
 See [DESIGN.md](DESIGN.md) for the specific choices awaiting discussion.
