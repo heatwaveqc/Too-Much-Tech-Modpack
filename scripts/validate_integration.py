@@ -116,8 +116,11 @@ def validate(root: Path) -> list[str]:
             if kind == "live-test-inclusion" and state in {"blocked", "owner_deferred"}:
                 if not isinstance(row.get("reason"), str) or not row["reason"].strip():
                     errors.append(f"{loc}: blocked/deferred needs reason")
-                if state == "owner_deferred" and not isinstance(row.get("owner_approval_url"), str):
-                    errors.append(f"{loc}: owner_deferred needs approval URL")
+                if state == "owner_deferred" and (
+                    not isinstance(row.get("owner_approval_url"), str)
+                    or not row["owner_approval_url"].startswith("https://")
+                ):
+                    errors.append(f"{loc}: owner_deferred needs owner_approval_url with https evidence")
             if kind == "live-test-inclusion" and state == "included":
                 if not isinstance(row.get("candidate_commit"), str) or not SHA40.fullmatch(row["candidate_commit"]):
                     errors.append(f"{loc}: included needs frozen candidate_commit")
