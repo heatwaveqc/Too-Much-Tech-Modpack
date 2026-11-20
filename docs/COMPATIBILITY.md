@@ -17,3 +17,11 @@ Too Much Magic is a useful workflow and potential compatibility reference, **not
 ## Update policy
 
 Before an explicitly authorized full assembly or release, survey the *active* packwiz roster and compatible upstream update candidates, including dependencies. Record update/hold/up-to-date/unknown and why. Do not fetch "latest" dynamically inside a frozen build. Pin exact versions and preserve rollback evidence.
+
+## Research ledgers (2026-11-20)
+
+- [Technology mods and 1.21.1 release evidence](research/TECH-MODS-2026-11-20.md) — 42 prospects including the four owner-selected core mods and explicit Thermal hold.
+- [TMM food/QoL carryover intake](research/TMM-FOOD-QOL-CARRYOVER-2026-11-20.md) — 56 donor records, historical TMM versions and pitfalls.
+- [Machine-readable research register](../manifest/mods.json) — current statuses: approved core, researching candidates, held mismatches. This research file is **not** an installed-mod index.
+
+Any TMT packwiz pin requires separate exact current source artifact, hash, dependencies, client/server side, redistribution check and reviewed integration PR. TMM's current integration files are an important provenance input but do not grant automatic compatibility or runtime PASS. The next comprehensive build must honor live-test inclusion and owner authorization rules.
