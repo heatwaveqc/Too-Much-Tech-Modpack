@@ -8,7 +8,7 @@
     "java": 21,
     "loader_status": "provisional"
   },
-  "status_note": "Owner 2026-11-20: previous 102 surveyed tech/TMM carryover targets retained. Cybernetic technology targets added: Cybernetics, Synthetics, Matter Overdrive (Unofficial Port), NeoSync, Create: Chromeware. Overlap alone not a blocker; real crashes/data incompatibility are. Progression module separately targeted as first-party TMM source, with Cyborg/Meatbag/Alien paths goals pending upstream readiness. The new 20 dimensional items are RESEARCH-ONLY, NOT selected, except Ad Astra already in original 102 targets. No packwiz installs. TMT also targets the shared TMM Unified Progression engine (source only, deferred pending upstream readiness), to support future Cyborg, Meatbag, Alien paths. On 2026-11-20 owner selected 5 primary dimension inclusion goals (Ad Astra: Planets, Stargate Journey, RFTools Dimensions, Infinite Dimensions, Deep Space) and 2 isolated experiment goals (MACHINA, Create: Universe). All seven are targets, none installed or verified in a full runtime. Initial biotech survey recorded 24 NEW research-only 1.21.1 NeoForge candidates, including direct biological genetics, living factories, biomedical disease systems, and alien species; none owner-targeted by the broad biotech inquiry. Existing Industrial Foregoing, Productive Bees, Synthetics, Oritech remain targeted. Inclusive overlap policy unchanged. On 2026-11-20 NEEPMeat added as unselected research-only, held because latest verified 1.20.1 Fabric release cannot run on provisional 1.21.1 NeoForge; re-evaluate future official ports. No install target yet. On 2026-11-20 all 25 researched biotech entries selected as targets: 24 possible NeoForge 1.21.1 mods including two rival Biomancy port implementations, plus NEEPMeat conditionally held pending game/loader port. Embers Re-Ignited, Embers Reborn and Botania Revived were researched/recommended but NOT owner-selected; magitech tech-first policy proposed. Owner approved optional magitech Botania Revived and Embers Re-Ignited; Embers Reborn remains a research fallback. Added 18 boss/combat research-only 1.21.1 NeoForge candidates; none auto-approved from request for assessment. Existing Draconic Chaos Guardian, Botania Gaia Guardian and some robot boss content provide initial anchors; full roster and encounter QA still pending. New 2026-11-20 sci-fi boss follow-up: 10 provider-available 1.21.1 NeoForge boss/dimension candidates and 4 incompatible old-version but thematic watchlist items, all research-only and no packwiz additions. Re-evaluated Mechafauna earlier robot survey: detailed part-targetable Mothership is a particularly strong fit.",
+  "status_note": "Owner 2026-11-20: previous 102 surveyed tech/TMM carryover targets retained. Cybernetic technology targets added: Cybernetics, Synthetics, Matter Overdrive (Unofficial Port), NeoSync, Create: Chromeware. Overlap alone not a blocker; real crashes/data incompatibility are. Progression module separately targeted as first-party TMM source, with Cyborg/Meatbag/Alien paths goals pending upstream readiness. The new 20 dimensional items are RESEARCH-ONLY, NOT selected, except Ad Astra already in original 102 targets. No packwiz installs. TMT also targets the shared TMM Unified Progression engine (source only, deferred pending upstream readiness), to support future Cyborg, Meatbag, Alien paths. On 2026-11-20 owner selected 5 primary dimension inclusion goals (Ad Astra: Planets, Stargate Journey, RFTools Dimensions, Infinite Dimensions, Deep Space) and 2 isolated experiment goals (MACHINA, Create: Universe). All seven are targets, none installed or verified in a full runtime. Initial biotech survey recorded 24 NEW research-only 1.21.1 NeoForge candidates, including direct biological genetics, living factories, biomedical disease systems, and alien species; none owner-targeted by the broad biotech inquiry. Existing Industrial Foregoing, Productive Bees, Synthetics, Oritech remain targeted. Inclusive overlap policy unchanged. On 2026-11-20 NEEPMeat added as unselected research-only, held because latest verified 1.20.1 Fabric release cannot run on provisional 1.21.1 NeoForge; re-evaluate future official ports. No install target yet. On 2026-11-20 all 25 researched biotech entries selected as targets: 24 possible NeoForge 1.21.1 mods including two rival Biomancy port implementations, plus NEEPMeat conditionally held pending game/loader port. Embers Re-Ignited, Embers Reborn and Botania Revived were researched/recommended but NOT owner-selected; magitech tech-first policy proposed. Owner approved optional magitech Botania Revived and Embers Re-Ignited; Embers Reborn remains a research fallback. Added 18 boss/combat research-only 1.21.1 NeoForge candidates; none auto-approved from request for assessment. Existing Draconic Chaos Guardian, Botania Gaia Guardian and some robot boss content provide initial anchors; full roster and encounter QA still pending. New 2026-11-20 sci-fi boss follow-up: 10 provider-available 1.21.1 NeoForge boss/dimension candidates and 4 incompatible old-version but thematic watchlist items, all research-only and no packwiz additions. Re-evaluated Mechafauna earlier robot survey: detailed part-targetable Mothership is a particularly strong fit. Owner 2026-11-20 explicitly elevated Crossroads MC to FIFTH CORE tech system (NeoForge 1.21.1 v2.12.1) and selected Patchouli for in-game manuals; Technomancer's separate Essentials dependency added (NOT FTB Essentials). Native heat/rotary/beam, ore-processing, alchemy/technomancy/bioengineering and shared atmospheric FE to be preserved; no packwiz pins or runtime test. Three new records added.",
   "donor": {
     "repository": "heatwaveqc/Too-Much-Magic-Modpack",
     "branch": "test/full-integration",
@@ -923,6 +923,29 @@
       "packwiz_installed": false,
       "target_version_policy": "source release candidate only; exact NeoForge 1.21.1 artifact/deps/hash, license and combined runtime validation pending",
       "compatibility": "published NeoForge 1.21.1 release; multi-system compatibility not tested"
+    },
+    {
+      "id": "patchouli",
+      "name": "Patchouli",
+      "category": "documentation",
+      "status": "approved",
+      "targeted_inclusion": true,
+      "selection_state": "targeted",
+      "priority": "owner-explicit-support",
+      "goal_phase": "documentation-support",
+      "project_url": "https://www.curseforge.com/minecraft/mc-mods/patchouli",
+      "provider_file_url": "https://www.curseforge.com/minecraft/mc-mods/patchouli/files/7730942",
+      "survey_version": "1.21.1-93-NEOFORGE",
+      "release_channel": "release",
+      "survey_date": "2026-11-20",
+      "documentation_for": [
+        "crossroads",
+        "essentials"
+      ],
+      "notes": "Owner explicitly requests Patchouli to provide Crossroads/Essentials in-game manuals and future other mods' documentation. Optional upstream for Crossroads, but selected part of TMT intended roster. NeoForge 1.21.1 build 93, distinct from Fabric/Quilt build.",
+      "selection_source": "explicit owner approval 2026-11-20: include Patchouli alongside Crossroads",
+      "compatibility": "Published NeoForge Minecraft 1.21.1 build 93; verify actual file metadata, licenses, client/server behavior, manuals and recipe links after install.",
+      "packwiz_installed": false
     },
     {
       "id": "tmt-unified-progression",
@@ -2151,6 +2174,70 @@
       "qa_notes": "Alien structure placement, xeno spawn controls, persistent hive/raids, competing alien worldgen, 1.21.1 artifact and game save.",
       "packwiz_installed": false,
       "compatibility": "Provider-listed NeoForge 1.21.1; exact jar/deps/license plus combined client/server runtime unverified."
+    },
+    {
+      "id": "crossroads",
+      "name": "Crossroads",
+      "category": "tech-core",
+      "status": "approved",
+      "targeted_inclusion": true,
+      "selection_state": "targeted",
+      "priority": "core",
+      "goal_phase": "core-tech-backbone",
+      "project_url": "https://www.curseforge.com/minecraft/mc-mods/crossroads-mc",
+      "provider_file_url": "https://www.curseforge.com/minecraft/mc-mods/crossroads-mc/files/9386883",
+      "source_url": "https://github.com/Crossroads-Development/Crossroads",
+      "survey_version": "1.21.1-2.12.1",
+      "release_channel": "release",
+      "survey_date": "2026-11-20",
+      "depends_on": [
+        "essentials"
+      ],
+      "recommended_with": [
+        "patchouli"
+      ],
+      "core_capabilities": [
+        "heat",
+        "rotary-power",
+        "steam",
+        "beam-alignment-and-optics",
+        "ore-processing",
+        "alchemy",
+        "technomancy",
+        "bioengineering",
+        "atmospheric-shared-FE",
+        "native-branching-paths"
+      ],
+      "notes": "Owner-explicit fifth core tech mod. Rube Goldberg engineering intentionally preserved: distinct temperature and rotary speed/torque systems, beam reflectors/alignment and Beacon Harness, intricate ore processing, alchemy/technomancy/bioengineering paths. Atmospheric Attenuator charges/drains a server-wide FE reservoir: source manual says default 1 billion FE, 20k FE/t per machine and no distance loss; overcharge triggers lightning/charged creepers by native config. Essentials by same author REQUIRED; Patchouli optional upstream but owner-selected for functional in-game guide/manual. Do not conflate Essentials with FTB Essentials. Avoid flattening native systems to generic FE or forcibly merging Crossroads paths into future Cyborg/Meatbag/Alien shared Progression.",
+      "selection_source": "explicit owner approval 2026-11-20: Crossroads is a core mod; include Patchouli as well",
+      "compatibility": "Published NeoForge Minecraft 1.21.1 file 2.12.1; no full TMT dependency lock, hash pin or runtime QA; Essentials dependency must be version-paired.",
+      "qa_gate": "Verify exact release file and license, required Essentials >=2.17.6 and Patchouli 1.21.1 NeoForge artifact, book registration, heat/rotary/beam safety and machine interoperability, server-wide atmospheric FE incl cross-dimension, multi-user access and weather effects, native multi-path progression, save/restart, chunk-crossing entropy and recipe viewer.",
+      "packwiz_installed": false
+    },
+    {
+      "id": "essentials",
+      "name": "Essentials (Technomancer)",
+      "category": "tech-dependencies",
+      "status": "approved",
+      "targeted_inclusion": true,
+      "selection_state": "targeted",
+      "priority": "required-dependency",
+      "goal_phase": "core-dependency",
+      "project_url": "https://www.curseforge.com/minecraft/mc-mods/essentials",
+      "provider_file_url": "https://www.curseforge.com/minecraft/mc-mods/essentials/files/8384593",
+      "survey_version": "1.21.1-2.17.6",
+      "release_channel": "release",
+      "survey_date": "2026-11-20",
+      "required_by": [
+        "crossroads"
+      ],
+      "recommended_with": [
+        "patchouli"
+      ],
+      "notes": "Crossroads developer Technomancer_isTaken's Essentials mod: utility circuits, wiring, valves and general machine control, plus a Patchouli guide. REQUIRED by Crossroads. Distinct mod ID/project from already targeted FTB Essentials (NeoForge), which is command/QoL software. Confirm 1.21.1 NeoForge and >=2.17.6 dependency version.",
+      "selection_source": "implicit mandatory dependency of owner-approved Crossroads 2026-11-20",
+      "compatibility": "Published NeoForge Minecraft 1.21.1 2.17.6; exact dependency metadata, hashes and compatibility with FTB Essentials to be verified, no runtime testing.",
+      "packwiz_installed": false
     },
     {
       "id": "ad-astra-galaxies",
@@ -3934,6 +4021,6 @@
     "scope": "102 prior targets plus five cybernetic systems; 4 conditional holds persist",
     "version_artifacts_locked": false,
     "actual_packwiz_pins_added": 0,
-    "selection_summary": "137 direct targeted, 5 conditional targets, 32 boss survey (18 generic +14 tech-heavy including 4 version-blocked), 11 robot mob survey, 13 dimension survey and one alternate Embers port research; zero packwiz pins."
+    "selection_summary": "140 direct targeted including 2 mutually exclusive Biomancy port candidates (five core tech mod families now), 5 conditional targets, 32 boss/encounter research, 11 robotic mob research, 13 dimension research, one alternative Embers port research; zero packwiz pins, no game boot."
   }
 }

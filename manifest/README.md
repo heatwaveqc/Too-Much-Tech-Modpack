@@ -57,3 +57,7 @@ The new 18 boss/mob/encounter projects are **research-only** with `selection_sta
 ## Tech-heavy boss survey correction — 2026-11-20
 
 The owner asked for more sci-fi/mechanical bosses than the first fantasy-skewed survey. **14 further research-only** entries were added with `category: "tech-bosses"` and `selection_state: "unselected_boss_survey"`. Ten have provider-listed NeoForge 1.21.1 builds, and four have `status: "held"` because they only have older Minecraft/Forge builds. They are not owner-selected, pinned or installed. Existing Mechafauna remains in the older robot-mob research section rather than being duplicated. [Focused tech boss report](../docs/research/TECH-HEAVY-BOSSES-2026-11-20.md).
+
+## Crossroads core expansion — 2026-11-20
+
+The owner explicitly upgraded **Crossroads** to the **fifth core technology**. Three approved target records were added: `crossroads` (2.12.1, NeoForge 1.21.1), its required **Technomancer** `essentials` (2.17.6, not existing `ftb-essentials`) and user-requested `patchouli` (build 93 NeoForge 1.21.1). All carry `targeted_inclusion:true`, `status:approved`, `selection_state:targeted`, `packwiz_installed:false`. `depends_on` documents the hard Crossroads → Essentials requirement; `recommended_with` documents the upstream-optional but user-selected Patchouli manual. Version/file URLs are source **research**, not locks or licensed JARs in packwiz. This extends the directly targeted candidate count by three. [Integration assessment](../docs/research/CROSSROADS-CORE-2026-11-20.md).
