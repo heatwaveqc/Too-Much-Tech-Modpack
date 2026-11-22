@@ -8,7 +8,7 @@
     "java": 21,
     "loader_status": "provisional"
   },
-  "status_note": "Owner 2026-11-20: previous 102 surveyed tech/TMM carryover targets retained. Cybernetic technology targets added: Cybernetics, Synthetics, Matter Overdrive (Unofficial Port), NeoSync, Create: Chromeware. Overlap alone not a blocker; real crashes/data incompatibility are. Progression module separately targeted as first-party TMM source, with Cyborg/Meatbag/Alien paths goals pending upstream readiness. The new 20 dimensional items are RESEARCH-ONLY, NOT selected, except Ad Astra already in original 102 targets. No packwiz installs. TMT also targets the shared TMM Unified Progression engine (source only, deferred pending upstream readiness), to support future Cyborg, Meatbag, Alien paths. On 2026-11-20 owner selected 5 primary dimension inclusion goals (Ad Astra: Planets, Stargate Journey, RFTools Dimensions, Infinite Dimensions, Deep Space) and 2 isolated experiment goals (MACHINA, Create: Universe). All seven are targets, none installed or verified in a full runtime. Initial biotech survey recorded 24 NEW research-only 1.21.1 NeoForge candidates, including direct biological genetics, living factories, biomedical disease systems, and alien species; none owner-targeted by the broad biotech inquiry. Existing Industrial Foregoing, Productive Bees, Synthetics, Oritech remain targeted. Inclusive overlap policy unchanged. On 2026-11-20 NEEPMeat added as unselected research-only, held because latest verified 1.20.1 Fabric release cannot run on provisional 1.21.1 NeoForge; re-evaluate future official ports. No install target yet. On 2026-11-20 all 25 researched biotech entries selected as targets: 24 possible NeoForge 1.21.1 mods including two rival Biomancy port implementations, plus NEEPMeat conditionally held pending game/loader port. Embers Re-Ignited, Embers Reborn and Botania Revived were researched/recommended but NOT owner-selected; magitech tech-first policy proposed. Owner approved optional magitech Botania Revived and Embers Re-Ignited; Embers Reborn remains a research fallback. Added 18 boss/combat research-only 1.21.1 NeoForge candidates; none auto-approved from request for assessment. Existing Draconic Chaos Guardian, Botania Gaia Guardian and some robot boss content provide initial anchors; full roster and encounter QA still pending. New 2026-11-20 sci-fi boss follow-up: 10 provider-available 1.21.1 NeoForge boss/dimension candidates and 4 incompatible old-version but thematic watchlist items, all research-only and no packwiz additions. Re-evaluated Mechafauna earlier robot survey: detailed part-targetable Mothership is a particularly strong fit. Owner 2026-11-20 explicitly elevated Crossroads MC to FIFTH CORE tech system (NeoForge 1.21.1 v2.12.1) and selected Patchouli for in-game manuals; Technomancer's separate Essentials dependency added (NOT FTB Essentials). Native heat/rotary/beam, ore-processing, alchemy/technomancy/bioengineering and shared atmospheric FE to be preserved; no packwiz pins or runtime test. Three new records added.",
+  "status_note": "Owner 2026-11-20: previous 102 surveyed tech/TMM carryover targets retained. Cybernetic technology targets added: Cybernetics, Synthetics, Matter Overdrive (Unofficial Port), NeoSync, Create: Chromeware. Overlap alone not a blocker; real crashes/data incompatibility are. Progression module separately targeted as first-party TMM source, with Cyborg/Meatbag/Alien paths goals pending upstream readiness. The new 20 dimensional items are RESEARCH-ONLY, NOT selected, except Ad Astra already in original 102 targets. No packwiz installs. TMT also targets the shared TMM Unified Progression engine (source only, deferred pending upstream readiness), to support future Cyborg, Meatbag, Alien paths. On 2026-11-20 owner selected 5 primary dimension inclusion goals (Ad Astra: Planets, Stargate Journey, RFTools Dimensions, Infinite Dimensions, Deep Space) and 2 isolated experiment goals (MACHINA, Create: Universe). All seven are targets, none installed or verified in a full runtime. Initial biotech survey recorded 24 NEW research-only 1.21.1 NeoForge candidates, including direct biological genetics, living factories, biomedical disease systems, and alien species; none owner-targeted by the broad biotech inquiry. Existing Industrial Foregoing, Productive Bees, Synthetics, Oritech remain targeted. Inclusive overlap policy unchanged. On 2026-11-20 NEEPMeat added as unselected research-only, held because latest verified 1.20.1 Fabric release cannot run on provisional 1.21.1 NeoForge; re-evaluate future official ports. No install target yet. On 2026-11-20 all 25 researched biotech entries selected as targets: 24 possible NeoForge 1.21.1 mods including two rival Biomancy port implementations, plus NEEPMeat conditionally held pending game/loader port. Embers Re-Ignited, Embers Reborn and Botania Revived were researched/recommended but NOT owner-selected; magitech tech-first policy proposed. Owner approved optional magitech Botania Revived and Embers Re-Ignited; Embers Reborn remains a research fallback. Added 18 boss/combat research-only 1.21.1 NeoForge candidates; none auto-approved from request for assessment. Existing Draconic Chaos Guardian, Botania Gaia Guardian and some robot boss content provide initial anchors; full roster and encounter QA still pending. New 2026-11-20 sci-fi boss follow-up: 10 provider-available 1.21.1 NeoForge boss/dimension candidates and 4 incompatible old-version but thematic watchlist items, all research-only and no packwiz additions. Re-evaluated Mechafauna earlier robot survey: detailed part-targetable Mothership is a particularly strong fit. Owner 2026-11-20 explicitly elevated Crossroads MC to FIFTH CORE tech system (NeoForge 1.21.1 v2.12.1) and selected Patchouli for in-game manuals; Technomancer's separate Essentials dependency added (NOT FTB Essentials). Native heat/rotary/beam, ore-processing, alchemy/technomancy/bioengineering and shared atmospheric FE to be preserved; no packwiz pins or runtime test. Three new records added. On 2026-11-21 owner approved CelesTech 0.1.4 alpha as a high-priority 1.21.1 NeoForge technology target, deliberately isolated-first, with GeckoLib 4.9.3 mandatory shared library. Confirmed current published release, known rendering/multiblock bugs and author permission for modpacks. No mod JARs downloaded or packwiz-installed.",
   "donor": {
     "repository": "heatwaveqc/Too-Much-Magic-Modpack",
     "branch": "test/full-integration",
@@ -1087,6 +1087,46 @@
       "selection_source": "owner direction 2026-11-20: include surveyed technology and TMM food/QoL candidates",
       "target_version_policy": "research_snapshot_only; require exact 1.21.1 NeoForge artifact, hash, dependency/license review before packwiz pin",
       "selection_state": "targeted"
+    },
+    {
+      "id": "celestech",
+      "name": "CelesTech",
+      "category": "space-industrial-tech",
+      "status": "approved",
+      "targeted_inclusion": true,
+      "selection_state": "targeted",
+      "priority": "high",
+      "goal_phase": "isolated-experiment",
+      "project_url": "https://www.curseforge.com/minecraft/mc-mods/celestech",
+      "provider_file_url": "https://www.curseforge.com/minecraft/mc-mods/celestech/files/9741328",
+      "survey_version": "0.1.4-alpha-1.21.1-neoforge",
+      "release_channel": "early-alpha",
+      "survey_date": "2026-11-21",
+      "depends_on": [
+        "geckolib"
+      ],
+      "optional_integration": [
+        "jei",
+        "curios",
+        "flywheel"
+      ],
+      "owner_intent": "Approved as high-priority intended tech inclusion on 2026-11-21, not core, not installed",
+      "core_capabilities": [
+        "star-radar-and-stellar-cannon",
+        "stellar-energy-and-black-holes",
+        "asteroid-mining-rockets",
+        "holographic-multiblock-assembly",
+        "industrial-ore-processing",
+        "robotic-fabrication",
+        "combat-drones",
+        "body-implants",
+        "custom-global-night-sky"
+      ],
+      "notes": "Early alpha space-tech/astronomy mod by RushOnly; 0.1.4 alpha released 2026-11-21 specifically for Minecraft 1.21.1 NeoForge. Requires GeckoLib >=4.9.3 and Java 21; listed 21.1+ NeoForge, earlier file specifies 21.1.264+ which TMT 21.1.265 satisfies. Tiered radar, shoot stars for stellar materials, generate new stars and black holes, asteroid mining rockets, drones, 40+ implants, robotic fabricator, novel sky renderer. Alpha 0.1.4 fixed Flywheel required-dependency bug (no longer asks for Flywheel), JEI names, sky multiplayer sync, assembly and logistics bugs; rendering and multiblock defects remain. It is an intentional overlap with Ad Astra/space systems and other cybernetics, not an exclusion. No direct installation or game test authorized.",
+      "selection_source": "owner 2026-11-21 'Agreed. Nice.' accepting prior recommendation to add as a high-priority technology candidate",
+      "compatibility": "Public CurseForge file 9741328 is NeoForge MC 1.21.1, Java 21, both client/server, requires GeckoLib 4.9.3+. Project license All Rights Reserved but author explicitly permits inclusion in modpacks; no byte download, hash/packwiz pin or game QA.",
+      "selection_gate": "Isolated disposable client/server and dedicated multiplayer test before combined integration. Validate GeckoLib 4.9.3 dependency, starfield/renderer vs other space mods and shaders, flywheel optional not hard, meteor radar global sky sync, mining rockets, multiblock persistence and resources, player surgery/implant serialization across NeoSync/Synthetics/Chromeware and future Progression, drone projectiles and claims.",
+      "packwiz_installed": false
     },
     {
       "id": "ad-astra",
@@ -2237,6 +2277,28 @@
       "notes": "Crossroads developer Technomancer_isTaken's Essentials mod: utility circuits, wiring, valves and general machine control, plus a Patchouli guide. REQUIRED by Crossroads. Distinct mod ID/project from already targeted FTB Essentials (NeoForge), which is command/QoL software. Confirm 1.21.1 NeoForge and >=2.17.6 dependency version.",
       "selection_source": "implicit mandatory dependency of owner-approved Crossroads 2026-11-20",
       "compatibility": "Published NeoForge Minecraft 1.21.1 2.17.6; exact dependency metadata, hashes and compatibility with FTB Essentials to be verified, no runtime testing.",
+      "packwiz_installed": false
+    },
+    {
+      "id": "geckolib",
+      "name": "GeckoLib (NeoForge)",
+      "category": "tech-dependencies",
+      "status": "approved",
+      "targeted_inclusion": true,
+      "selection_state": "targeted",
+      "priority": "required-dependency",
+      "goal_phase": "shared-library",
+      "project_url": "https://www.curseforge.com/minecraft/mc-mods/geckolib",
+      "provider_file_url": "https://www.curseforge.com/minecraft/mc-mods/geckolib/files/8893490",
+      "survey_version": "4.9.3-neoforge-1.21.1",
+      "release_channel": "release",
+      "survey_date": "2026-11-21",
+      "required_by": [
+        "celestech"
+      ],
+      "notes": "GeckoLib >=4.9.3 is a required dependency for owner-approved CelesTech. Exact NeoForge 1.21.1 v4.9.3 provider file 8893490. One shared GeckoLib runtime should satisfy other mob/animation mods if their metadata ranges permit; do not install duplicate Forge/Fabric GeckoLib jars or multiple versions. No packwiz pin or runtime verification.",
+      "selection_source": "required transitive dependency of owner-approved CelesTech target 2026-11-21",
+      "compatibility": "Provider lists NeoForge Minecraft 1.21.1 4.9.3; no exact JAR hash or combined gameplay QA.",
       "packwiz_installed": false
     },
     {
@@ -4021,6 +4083,6 @@
     "scope": "102 prior targets plus five cybernetic systems; 4 conditional holds persist",
     "version_artifacts_locked": false,
     "actual_packwiz_pins_added": 0,
-    "selection_summary": "140 direct targeted including 2 mutually exclusive Biomancy port candidates (five core tech mod families now), 5 conditional targets, 32 boss/encounter research, 11 robotic mob research, 13 dimension research, one alternative Embers port research; zero packwiz pins, no game boot."
+    "selection_summary": "142 direct target records including two Biomancy alternate implementation candidates, 5 conditional targets, 32 boss/encounter research, 11 robotic mob research, 13 dimension research and one alternate Embers port; CelesTech and GeckoLib added (isolated alpha candidate and dependency); zero packwiz pins."
   }
 }
