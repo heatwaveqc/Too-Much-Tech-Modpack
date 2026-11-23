@@ -28,6 +28,8 @@ Read the actual live integration manifest before intake; 2026-11-22 `test/full-i
 
 | Priority | Candidate | Verified 1.21.1 NeoForge metadata | TMT value / caveat |
 | --- | --- | --- | --- |
+| High / specialized | Create: Going Nuclear | https://www.curseforge.com/minecraft/mc-mods/going-nuclear — 1.21.1 NeoForge artifact `goingnuclear-0.512-6.jar` (2026-10-30) | Detailed Create-based uranium refining/enrichment, BWR/RBMK layouts, shielding/dose physics, instrumentation, spent fuel and configurable accidents; research only, test server load/world destruction and overlap with other reactors/radiation systems. |
+| Medium / alternative nuclear | Create: Atomic | https://www.curseforge.com/minecraft/mc-mods/createatomic — 1.3.2 | Another Create multiblock nuclear / turbine option with radioisotope heat generation and meltdown mechanics. Distinct from New Age; overlap acceptable under inclusive survey policy. |
 | High | Create: Diesel Generators | https://www.curseforge.com/minecraft/mc-mods/create-diesel-generators — latest seen 1.3.16, released 2026-11-21 | Crude-oil refining and diesel engines; verify competing petroleum systems and recipes. |
 | High | Create: New Age | https://www.curseforge.com/minecraft/mc-mods/create-new-age — 1.2.0 | Electricity/electromagnetic machinery; audit energy bridge loops alongside Create Crafts & Additions. |
 | High | Create Ore Excavation | https://www.curseforge.com/minecraft/mc-mods/create-ore-excavation — 1.6.8 | Kinetic, automated deposit extraction; audit resource abundance and ore/material compatibility. |
