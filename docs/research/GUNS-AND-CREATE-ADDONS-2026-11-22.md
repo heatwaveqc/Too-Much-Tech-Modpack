@@ -33,7 +33,7 @@ Read the actual live integration manifest before intake; 2026-11-22 `test/full-i
 | High | Create Ore Excavation | https://www.curseforge.com/minecraft/mc-mods/create-ore-excavation — 1.6.8 | Kinetic, automated deposit extraction; audit resource abundance and ore/material compatibility. |
 | High | Create: Power Loader | https://www.curseforge.com/minecraft/mc-mods/create-power-loader — 2.0.5 | Contraption/train chunk loading; test server memory, claim rules, forced-chunk limits. |
 | Medium | Create: Connected | https://www.curseforge.com/minecraft/mc-mods/create-connected — 1.3.3 | More mechanical/logistics building blocks and contraption options. |
-| Medium | Create: Escalated | https://www.curseforge.com/minecraft/mc-mods/create-escalated — 1.3.2 | Vertical conveyance/elevators; review actual gameplay role and physics. |
+| Medium | Create: Escalated | https://www.curseforge.com/minecraft/mc-mods/create-escalated — 1.3.2 | Rotation-powered escalators and walkways for factories/stations; check moving-player collision and server physics. |
 | Medium | Create Railways Navigator | https://www.curseforge.com/minecraft/mc-mods/create-railways-navigator — 0.9.1 beta | Schedules, route-finding and stations; assess against unofficial Steam 'n' Rails port. |
 | Medium | Create: Enchantment Industry | https://www.curseforge.com/minecraft/mc-mods/create-enchantment-industry — 2.5.4b for Create 6.0.10 | Automate XP/enchanting; optional tech-facing fantasy overlap. |
 | Medium | Create Slice & Dice | https://www.curseforge.com/minecraft/mc-mods/slice-and-dice — 4.3.4 | Link Create with Farmer's Delight food processing and automation. |
